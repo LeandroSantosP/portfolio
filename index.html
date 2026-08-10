@@ -153,9 +153,9 @@
         /* Stronger dark-specific override in case Tailwind utilities add transparency */
         html.dark nav { background-color: var(--surface) !important; color: var(--text) !important; }
         html.dark nav * { color: var(--text) !important; }
-        /* Make the contact button visible in dark mode (invert colors) */
         /* Contact button uses theme tokens so it flips automatically when variables change */
         .topnav-contact { background-color: var(--primary) !important; color: var(--on-primary) !important; }
+        html.dark .topnav-contact { background-color: var(--primary) !important; color: var(--on-primary) !important; }
         .topnav-contact:hover { opacity: 0.9; }
 
         /* Utility overrides for a consistent theme switch */

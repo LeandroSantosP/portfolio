@@ -5,7 +5,7 @@ export default function About() {
     <section className="grid grid-cols-1 md:grid-cols-12 gap-xl items-center transition-all duration-700 opacity-100" id="about">
       <div className="md:col-span-5 relative">
         <div className="aspect-square rounded-lg overflow-hidden bg-surface-container shadow-sm border border-outline-variant/30">
-          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqIMjAMO3mcMzQJN3ILFwlQEfAvUA9jEu7vVvxaFBA0f2e4kF8J10H5MQ0ZpJVMZrsXJR1BPea97yotH995CGqrBhsqrumvlLDDE2mthBPimtfUArtTm_CS7P7QdlPXBBQh_xWCKlhy6jmvpzUeO3EktKK9slNVxxPic3BfnfTgFIywgLhIkuIqHusFHek79oQh-xy1qlobOUJOUN8eVt1vb0gyuI8Tm4DaJP_g-s3wS3Uadv-bdUbhaWYAHtyuNvkUyKlRZbu_uta" alt="Engenheiro de Software" className="w-full h-full object-cover" />
+          <img src="/perfil-photo.jpg" alt="Engenheiro de Software" className="w-full h-full object-cover" />
         </div>
       </div>
 

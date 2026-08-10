@@ -49,8 +49,7 @@ export default function TopNav() {
 
           <a
             href="#contact"
-            className="topnav-contact px-6 py-2 rounded-lg font-label-md text-label-md hover:opacity-70 transition-opacity duration-300 active:scale-95 transition-transform duration-200"
-            style={{ backgroundColor: 'var(--primary)', color: 'var(--on-primary)' }}
+            className="topnav-contact px-6 py-2 rounded-lg font-label-md text-label-md bg-primary text-on-primary hover:opacity-70 transition-opacity duration-300 active:scale-95 transition-transform duration-200 dark:bg-primary dark:text-on-primary"
           >
             Contato
           </a>
@@ -59,3 +58,5 @@ export default function TopNav() {
     </nav>
   )
 }
+
+
