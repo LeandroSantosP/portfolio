@@ -1,4 +1,26 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-  <rect width="100" height="100" rx="20" fill="#2563eb"/>
-  <text x="50" y="55" font-size="48" text-anchor="middle" fill="white" font-family="Arial, Helvetica, sans-serif">AI</text>
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="64" y1="44" x2="448" y2="468" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F1115"/>
+      <stop offset="1" stop-color="#05070A"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="140" y1="126" x2="368" y2="386" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#B9D5FF"/>
+      <stop offset="1" stop-color="#5DA3FF"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="28" y="28" width="456" height="456" rx="108" fill="url(#bg)"/>
+  <rect x="28" y="28" width="456" height="456" rx="108" stroke="#2B3038" stroke-width="6"/>
+
+  <path d="M170 148H236V358H170V148Z" fill="#F4F7FF"/>
+  <path d="M296 148H338V358H296V148Z" fill="url(#accent)"/>
+
+  <path d="M188 256L128 334L188 412" stroke="#F4F7FF" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M324 256L384 334L324 412" stroke="url(#accent)" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M246 144L214 368" stroke="#EAF1FF" stroke-width="18" stroke-linecap="round"/>
+
+  <circle cx="372" cy="128" r="18" fill="#8CC2FF"/>
+  <path d="M146 136H178" stroke="#F7FAFF" stroke-width="10" stroke-linecap="round" opacity="0.9"/>
+  <path d="M334 376H366" stroke="#9EC8FF" stroke-width="10" stroke-linecap="round" opacity="0.9"/>
 </svg>
