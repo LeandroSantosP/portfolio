@@ -7,28 +7,28 @@ export default function HeroAbout() {
       <div className="md:col-span-7 flex flex-col justify-start gap-6">
         <div className="inline-flex items-center gap-2 bg-surface-container-high px-3 py-1 rounded-lg">
           <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
-          <span className="font-label-sm text-label-sm text-on-surface-variant">Disponível para novos projetos</span>
+          <span className="font-label-sm text-label-sm text-on-surface-variant">Disponível para trabalho remoto ou presencial</span>
         </div>
 
         <h1 className="font-headline-xl text-headline-xl text-primary mb-2 max-w-4xl">
-          Estudante de Engenharia de Software &amp; <span className="text-on-tertiary-container">Web Developer</span>
+          Estudante de Engenharia de Software &amp; <span className="text-on-tertiary-container">Software, Dados &amp; IA</span>
         </h1>
 
         <p className="font-headline-md text-headline-md text-secondary mb-4 max-w-2xl">
-          Cursando Engenharia de Software buscando atuar como Estagiário ou Desenvolvedor Backend Júnior, com foco em Java, Spring Boot e APIs REST.
+          Buscando atuar como Estagiário TI ou Desenvolvedor Júnior, com foco em Java, Spring Boot, Node.js e APIs REST.
         </p>
 
         <p className="text-body-lg text-body-lg text-secondary max-w-2xl">
-          Com interesse por DevOps/Cloud (Docker, CI/CD e AWS) e soluções com IA e sua aplicação no desenvolvimento de software.
+          Com conhecimentos em AWS, Docker, CI/CD, React.js e metodologias ágeis, aplicando IA e dados para resolver problemas técnicos e melhorar processos.
         </p>
 
         <div className="flex gap-4 items-center">
-          <a href="#projects" className="bg-primary text-on-primary px-6 py-3 rounded-lg font-label-md text-label-md hover:opacity-90 transition-all flex items-center gap-2" onClick={(e) => { e.preventDefault(); scrollToId('#projects'); }}>
+          <a href="#timeline" className="bg-primary text-on-primary px-6 py-3 rounded-lg font-label-md text-label-md hover:opacity-90 transition-all flex items-center gap-2" onClick={(e) => { e.preventDefault(); scrollToId('#timeline'); }}>
             Projetos
             <span className="material-symbols-outlined text-[18px]">arrow_downward</span>
           </a>
 
-          <a href="#about" className="border border-outline-variant text-primary px-6 py-3 rounded-lg font-label-md text-label-md hover:bg-surface-container transition-all" onClick={(e) => { e.preventDefault(); scrollToId('#about'); }}>Sobre</a>
+          <a href="#home" className="border border-outline-variant text-primary px-6 py-3 rounded-lg font-label-md text-label-md hover:bg-surface-container transition-all" onClick={(e) => { e.preventDefault(); scrollToId('#home'); }}>Sobre</a>
 
           <a href="#contact" className="border border-outline-variant text-primary px-6 py-3 rounded-lg font-label-md text-label-md hover:bg-surface-container transition-all" onClick={(e) => { e.preventDefault(); scrollToId('#contact'); }}>Contato</a>
 
@@ -64,8 +64,8 @@ export default function HeroAbout() {
         </div>
 
         <div className="mt-4 font-body-lg text-body-lg text-secondary">
-          <p className="mb-2">Minha jornada no desenvolvimento de software começou com a curiosidade de entender como sistemas complexos se comunicam. Hoje, especializo-me em ecossistemas Java, transformando requisitos abstratos em APIs de alta performance.</p>
-          <p className="mb-0">Acredito que o código deve ser tão legível quanto uma boa prosa. Meu foco está em Clean Architecture e princípios SOLID, garantindo que o software não apenas funcione hoje, mas evolua com o negócio amanhã.</p>
+          <p className="mb-2">Sou um profissional em formação em Engenharia de Software, com experiência prática em desenvolvimento de APIs REST, automação, banco de dados e projetos de inteligência artificial. Autodidata, organizado e com forte interesse em aplicar IA e dados para resolver problemas técnicos.</p>
+          <p className="mb-0">Automatizei tarefas com Claude Code, Codex, Gemini e OpenCode. Meu foco está em código limpo, arquitetura em camadas e APIs bem contratadas que evoluem com o negócio amanhã.</p>
         </div>
       </div>
 

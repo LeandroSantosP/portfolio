@@ -7,7 +7,7 @@ export default function TopNav() {
     if (typeof window === 'undefined') return false
     const saved = localStorage.getItem('theme')
     if (saved) return saved === 'dark'
-    return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+    return false
   })
 
   useEffect(() => {
@@ -31,9 +31,11 @@ export default function TopNav() {
         </div>
 
         <div className="hidden md:flex items-center gap-xl">
-          <a className="text-secondary dark:text-secondary-fixed-dim hover:text-primary transition-colors font-label-md text-label-md" href="#about" onClick={(e) => { e.preventDefault(); scrollToId('#about'); }}>Sobre</a>
-          <a className="text-secondary dark:text-secondary-fixed-dim hover:text-primary transition-colors font-label-md text-label-md" href="#projects" onClick={(e) => { e.preventDefault(); scrollToId('#projects'); }}>Projetos</a>
+          <a className="text-secondary dark:text-secondary-fixed-dim hover:text-primary transition-colors font-label-md text-label-md" href="#home" onClick={(e) => { e.preventDefault(); scrollToId('#home'); }}>Sobre</a>
+          <a className="text-secondary dark:text-secondary-fixed-dim hover:text-primary transition-colors font-label-md text-label-md" href="#experience" onClick={(e) => { e.preventDefault(); scrollToId('#experience'); }}>Experiências</a>
+          <a className="text-secondary dark:text-secondary-fixed-dim hover:text-primary transition-colors font-label-md text-label-md" href="#timeline" onClick={(e) => { e.preventDefault(); scrollToId('#timeline'); }}>Projetos</a>
           <a className="text-secondary dark:text-secondary-fixed-dim hover:text-primary transition-colors font-label-md text-label-md" href="#skills" onClick={(e) => { e.preventDefault(); scrollToId('#skills'); }}>Habilidades</a>
+          <a className="text-secondary dark:text-secondary-fixed-dim hover:text-primary transition-colors font-label-md text-label-md" href="#trajectory" onClick={(e) => { e.preventDefault(); scrollToId('#trajectory'); }}>Formação Acadêmica</a>
         </div>
 
         <div className="flex items-center gap-3">

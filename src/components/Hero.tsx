@@ -17,7 +17,7 @@ export default function Hero() {
       </p>
 
       <div className="flex gap-md">
-        <a href="#projects" className="bg-primary text-on-primary px-8 py-4 rounded-lg font-label-md text-label-md hover:opacity-90 transition-all flex items-center gap-2">
+        <a href="#timeline" className="bg-primary text-on-primary px-8 py-4 rounded-lg font-label-md text-label-md hover:opacity-90 transition-all flex items-center gap-2">
           Projetos
           <span className="material-symbols-outlined text-[18px]">arrow_downward</span>
         </a>

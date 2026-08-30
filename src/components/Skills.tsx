@@ -10,33 +10,33 @@ type Category = {
 const categories: Category[] = [
   {
     id: 'technical',
-    title: 'Habilidades Técnicas',
+    title: 'Desenvolvimento',
     colorClass: 'bg-cyan-400',
-    items: ['Java', 'Spring Boot', 'JavaScript', 'Node.js', 'React.js', 'APIs REST', 'GitHub', 'Pacote Office']
+    items: ['Java', 'Spring Boot', 'Node.js', 'React.js', 'APIs REST', 'JavaScript']
   },
   {
     id: 'cloud',
-    title: 'Cloud & DevOps',
+    title: 'Cloud & Infraestrutura',
     colorClass: 'bg-amber-400',
-    items: ['AWS (VPC, EC2, S3)', 'CI/CD (GitHub Actions)', 'Docker', 'Linux']
+    items: ['AWS (VPC, EC2, S3)', 'CI/CD', 'Docker', 'Linux']
   },
   {
     id: 'db',
-    title: 'Banco de Dados',
+    title: 'Banco de Dados & BI',
     colorClass: 'bg-emerald-400',
-    items: ['PostgreSQL', 'MySQL', 'SQL', 'Hibernate / JPA']
+    items: ['PostgreSQL', 'MySQL', 'SQL', 'Power BI', 'KPIs', 'Modelagem e consultas SQL']
   },
   {
     id: 'tools',
     title: 'Ferramentas & Metodologias',
     colorClass: 'bg-violet-400',
-    items: ['Power BI', 'Git', 'Jira', 'JUnit', 'JWT', 'OAuth2', 'Maven', 'SDD', 'Scrum']
+    items: ['Git', 'JWT', 'OAuth2', 'Scrum']
   },
   {
     id: 'ai',
-    title: 'IA',
+    title: 'IA & Automação',
     colorClass: 'bg-sky-400',
-    items: ['Prompt Engineering', 'Claude Code', 'Codex', 'Gemini', 'Opencode']
+    items: ['Prompt Engineering', 'ChatGPT', 'Claude Code', 'Codex', 'Gemini', 'OpenCode']
   },
   {
     id: 'soft',
@@ -48,7 +48,7 @@ const categories: Category[] = [
     id: 'lang',
     title: 'Idiomas',
     colorClass: 'bg-slate-400',
-    items: ['Inglês: Fluente (Leitura e Compreensão) | Intermediário (Fala e Escrita)', 'Português: Nativo']
+    items: ['Inglês: Fluente (Leitura e Compreensão) | Intermediário em Escrita, Básico em Fala', 'Português: Nativo']
   }
 ]
 
@@ -74,7 +74,7 @@ export default function Skills(): JSX.Element {
             {cat.id === 'lang' ? (
               <div className="mt-2 rounded-md bg-surface/3 p-4 border border-outline-variant/10">
                 <div className="text-body-md font-body-md text-secondary space-y-2">
-                  <p className="mb-2"><strong>Inglês</strong>: Fluente (Leitura e Compreensão) — Intermediário (Fala e Escrita)</p>
+                  <p className="mb-2"><strong>Inglês</strong>: Fluente (Leitura e Compreensão) — Intermediário em Escrita, Básico em Fala</p>
                   <p><strong>Português</strong>: Nativo</p>
                 </div>
               </div>

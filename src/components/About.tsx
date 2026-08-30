@@ -12,9 +12,9 @@ export default function About() {
       <div className="md:col-span-7 flex flex-col gap-6">
         <h2 className="font-headline-lg text-headline-lg text-primary">Arquitetando soluções robustas com elegância técnica.</h2>
         <div className="font-body-lg text-body-lg text-secondary flex flex-col gap-4">
-          <p>Minha jornada no desenvolvimento de software começou com a curiosidade de entender como sistemas complexos se comunicam. Hoje, especializo-me em ecossistemas Java, transformando requisitos abstratos em APIs de alta performance.</p>
-          <p>Acredito que o código deve ser tão legível quanto uma boa prosa. Meu foco está em Clean Architecture e princípios SOLID, garantindo que o software não apenas funcione hoje, mas evolua com o negócio amanhã.</p>
-          <p>Quando não estou programando, estou explorando novas tendências em UI/UX ou contribuindo para projetos open-source que facilitam o dia a dia de outros desenvolvedores.</p>
+          <p>Sou um profissional em formação em Engenharia de Software, com experiência prática em desenvolvimento de APIs REST, automação, banco de dados e projetos de inteligência artificial. Autodidata, organizado e com forte interesse em aplicar IA e dados para resolver problemas técnicos, contribuindo para melhorias de processos e inovação.</p>
+          <p>Acredito que o código deve ser tão legível quanto uma boa prosa. Meu foco está em código limpo, arquitetura em camadas e APIs bem contratadas, que não apenas funcionam hoje, mas evoluem com o negócio amanhã.</p>
+          <p>Automatizo tarefas com Claude Code, Codex, Gemini e OpenCode. Quando não estou programando, estou explorando novas tendências em IA, cloud e open-source.</p>
         </div>
       </div>
     </section>

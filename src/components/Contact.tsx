@@ -81,22 +81,22 @@ export default function Contact() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-xl w-full max-w-4xl">
         <div className="flex flex-col gap-6">
           <div className="flex items-center gap-4">
-            <span className="material-symbols-outlined">phone</span>
+            <span className="material-symbols-outlined leading-none" aria-hidden>phone</span>
             <a className="text-primary font-semibold" href="tel:+5511992776212">11 99277-6212</a>
           </div>
 
           <div className="flex items-center gap-4">
-            <span className="material-symbols-outlined">mail</span>
+            <span className="material-symbols-outlined leading-none" aria-hidden>mail</span>
             <a className="text-primary font-semibold" href="mailto:skp.Tridimensional@gmail.com">skp.Tridimensional@gmail.com</a>
           </div>
 
           <div className="flex items-center gap-4">
-            <span className="material-symbols-outlined">place</span>
+            <span className="material-symbols-outlined leading-none" aria-hidden>place</span>
             <div className="text-secondary">Jardim do Vale, Itaquaquecetuba/SP</div>
           </div>
 
           <div className="flex items-center gap-4">
-            <span className="material-symbols-outlined">badge</span>
+            <span className="material-symbols-outlined leading-none" aria-hidden>badge</span>
             <div className="text-secondary">Habilitação (CNH): Categoria B</div>
           </div>
 

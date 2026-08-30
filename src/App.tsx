@@ -3,7 +3,8 @@ import TopNav from './components/TopNav'
 import HeroAbout from './components/HeroAbout'
 import About from './components/About'
 import Blog from './components/Blog'
-import Projects from './components/Projects'
+import Experience from './components/Experience'
+import Timeline from './components/Timeline'
 import Skills from './components/Skills'
 import Trajectory from './components/Trajectory'
 import Contact from './components/Contact'
@@ -84,7 +85,8 @@ export default function App(): JSX.Element {
       <TopNav />
       <main ref={el => (mainRef.current = el)} className="max-w-container-max mx-auto px-gutter">
         <HeroAbout />
-        <Projects />
+        <Experience />
+        <Timeline />
         <Skills />
         <Trajectory />
         <Contact />
