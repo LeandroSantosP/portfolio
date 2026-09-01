@@ -1,9 +1,10 @@
 <!doctype html>
-<html lang="pt-br">
+<html lang="pt-BR">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#f7f3e8" />
+    <meta name="description" content="Portfólio de Leandro Pereira dos Santos — Estudante de Engenharia de Software, foco em Java, Spring Boot, Node.js, APIs REST, dados e IA." />
     <title>DevPortfolio | Engenheiro de Software</title>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="apple-touch-icon" href="/favicon.svg" />
@@ -98,6 +99,7 @@
                         "base": "8px",
                         "sm": "12px",
                         "xl": "80px",
+                        "2xl": "128px",
                         "gutter": "24px",
                         "margin-mobile": "16px",
                         "container-max": "1200px",
@@ -116,12 +118,12 @@
                     "fontSize": {
                         "label-md": ["14px", {"lineHeight": "1.4", "letterSpacing": "0.02em", "fontWeight": "500"}],
                         "body-lg": ["18px", {"lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400"}],
-                        "headline-lg": ["32px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "500"}],
+                        "headline-lg": ["clamp(1.5rem, 1.25rem + 1.25vw, 2rem)", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "500"}],
                         "body-md": ["16px", {"lineHeight": "1.5", "letterSpacing": "0", "fontWeight": "400"}],
                         "label-sm": ["12px", {"lineHeight": "1.4", "letterSpacing": "0.05em", "fontWeight": "600"}],
-                        "headline-xl": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600"}],
-                        "headline-xl-mobile": ["32px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600"}],
-                        "headline-md": ["24px", {"lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "500"}]
+                        "headline-xl": ["clamp(2.25rem, 1.5rem + 3vw, 3rem)", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                        "headline-xl-mobile": ["clamp(1.75rem, 1.25rem + 2.5vw, 2rem)", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                        "headline-md": ["clamp(1.125rem, 1rem + 0.9vw, 1.5rem)", {"lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "500"}]
                     }
                 }
             }
@@ -147,6 +149,12 @@
             padding-top: 80px;
             padding-bottom: 80px;
         }
+        @media (max-width: 767px) {
+            section {
+                padding-top: 56px;
+                padding-bottom: 56px;
+            }
+        }
         /* Theme variables to allow quick dark/light switching.
            The TopNav toggles the 'dark' class on <html>, which flips these.
         */
@@ -162,6 +170,10 @@
             --cream: #f7f3e8;
             --cream-soft: #e6dcc0;
             --band: #1a1a1a;
+            --band-glass-a: rgba(26, 26, 26, 0.82);
+            --band-glass-b: rgba(38, 38, 36, 0.66);
+            --traj-a: #f3ead2;
+            --traj-b: #eee2c2;
         }
 
         .dark {
@@ -176,6 +188,10 @@
             --cream: #f7f3e8;
             --cream-soft: #e6dcc0;
             --band: #262624;
+            --band-glass-a: rgba(20, 19, 17, 0.75);
+            --band-glass-b: rgba(33, 31, 26, 0.58);
+            --traj-a: #2a2419;
+            --traj-b: #1f1a12;
         }
 
         /* Apply variables to base elements */

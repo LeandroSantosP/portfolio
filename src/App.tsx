@@ -10,6 +10,7 @@ import Trajectory from './components/Trajectory'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import { scrollToId } from './utils/scroll'
+import ParticlesBackground from './components/ParticlesBackground'
 
 export default function App(): JSX.Element {
   const mainRef = useRef<HTMLElement | null>(null)
@@ -70,7 +71,7 @@ export default function App(): JSX.Element {
     // listen on the whole document so nav links (outside <main>) are handled
     document.addEventListener('click', handleClick)
     main.querySelectorAll('section').forEach(section => {
-      section.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-10')
+      section.classList.add('transition-[transform,opacity]', 'duration-700', 'opacity-0', 'translate-y-10')
       observer.observe(section)
     })
 
@@ -81,7 +82,8 @@ export default function App(): JSX.Element {
   }, [])
 
   return (
-    <div>
+    <div className="relative z-10">
+      <ParticlesBackground />
       <TopNav />
       <main ref={el => (mainRef.current = el)}>
         <div className="max-w-container-max mx-auto px-gutter">

@@ -1,0 +1,229 @@
+{
+  "meta": {
+    "title": "DevPortfolio | Software Engineer",
+    "description": "Leandro Pereira dos Santos portfolio — Software Engineering student, focused on Java, Spring Boot, Node.js, REST APIs, data and AI."
+  },
+  "common": {
+    "downloadCv": "Download CV",
+    "aria": {
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "email": "Email"
+    }
+  },
+  "nav": {
+    "about": "About",
+    "experience": "Experience",
+    "projects": "Projects",
+    "skills": "Skills",
+    "academic": "Education",
+    "contact": "Contact",
+    "language": "Select language",
+    "themeLight": "Switch to light mode",
+    "themeDark": "Switch to dark mode",
+    "menu": "Open navigation menu",
+    "closeMenu": "Close navigation menu"
+  },
+  "heroAbout": {
+    "available": "Available for remote or on-site work",
+    "titleStart": "Software Engineering Student &",
+    "titleHighlight": "Software, Data & AI",
+    "tagline": "Seeking an IT Intern or Junior Developer role, focused on Java, Spring Boot, Node.js and REST APIs.",
+    "intro": "With knowledge in AWS, Docker, CI/CD, React.js and agile methodologies, applying AI and data to solve technical problems and improve processes.",
+    "ctaProjects": "Projects",
+    "ctaAbout": "About",
+    "ctaContact": "Contact",
+    "paragraphs": [
+      "I am a professional in training in Software Engineering, with hands-on experience in REST API development, automation, databases and artificial intelligence projects. Self-taught, organized and with a strong interest in applying AI and data to solve technical problems.",
+      "I have automated tasks with Claude Code, Codex, Gemini and OpenCode. My focus is on clean code, layered architecture and well-contracted APIs that evolve with the business tomorrow."
+    ],
+    "imgAlt": "Software Engineer"
+  },
+  "hero": {
+    "available": "Available for new projects",
+    "titleStart": "Software Engineer &",
+    "titleHighlight": "Web Developer",
+    "tagline": "Specialized in Java & Spring Boot, focused on scalable architectures and refined user experiences.",
+    "ctaProjects": "Projects",
+    "ctaAbout": "About Me"
+  },
+  "about": {
+    "heading": "Architecting robust solutions with technical elegance.",
+    "paragraphs": [
+      "I am a professional in training in Software Engineering, with hands-on experience in REST API development, automation, databases and artificial intelligence projects. Self-taught, organized, with a strong interest in applying AI and data to solve technical problems, contributing to process improvements and innovation.",
+      "I believe code should be as readable as good prose. My focus is on clean code, layered architecture and well-contracted APIs — software that not only works today, but evolves with the business tomorrow.",
+      "I automate tasks with Claude Code, Codex, Gemini and OpenCode. When I'm not coding, I'm exploring new trends in AI, cloud and open-source."
+    ],
+    "imgAlt": "Software Engineer"
+  },
+  "experience": {
+    "title": "EXPERIENCE",
+    "role": "FlyRank AI Internship / <tag>Internship</tag> — Backend AI Engineering Track",
+    "period": "06/2026 — 08/2026",
+    "bullets": [
+      "Final Project (Embeddable Lead Capture Platform): developed a lead capture and qualification platform with an embeddable (cross-domain) widget, rigorous API contracts and asynchronous data processing.",
+      "API and contract design: modeled and implemented REST endpoints with strict schema validation, defensive error handling and well-defined error states.",
+      "Prompt and task engineering: structured instructions with clear boundaries, input/output schemas and success criteria for AI-automated tasks.",
+      "Evaluation and quality (Evals): ensured the AI gives correct answers and follows business rules, without making up information (hallucinating)."
+    ]
+  },
+  "timeline": {
+    "title": "TIMELINE",
+    "subtitle": "Full journey: projects, education and experience.",
+    "githubPrefix": "GitHub",
+    "events": {
+      "controlApi": {
+        "period": "2024",
+        "title": "Control API",
+        "subtitle": "<tag1>Personal project</tag1> — Personal Finance Control System — (Node.js + React) - (hand-coded)",
+        "body": "Personal finance control project with JWT authentication, categorized transactions, PDF reports, image upload and monthly goals.",
+        "bullets": [
+          "Implemented stateless JWT authentication, protecting all private routes via an authorization middleware.",
+          "Built a transaction system with categorization, recurrence and 5 dynamic filters (month, subscriptions, recurring, income, completed), including a dashboard chart comparing highest/lowest transaction per month.",
+          "Implemented PDF report generation with Handlebars, filterable by period and category (expenses/income/subscriptions).",
+          "Integrated image upload with Firebase Storage.",
+          "Created a monthly financial goals system with a graphical progress view (goal vs. achieved amount)."
+        ]
+      },
+      "sellEcom": {
+        "period": "03/2025",
+        "title": "Sell Ecom",
+        "subtitle": "<tag1>Personal project</tag1> — E-commerce REST API — (Spring-Boot) - (hand-coded + <tag3>AI</tag3>)",
+        "body": "Personal e-commerce REST API project with layered architecture, OAuth2 authentication and automated tests.",
+        "bullets": [
+          "Developed an e-commerce REST API with Spring Boot (12+ endpoints, layered architecture).",
+          "Implemented authentication and authorization with Spring Security + OAuth2, protecting 10 endpoints with access control based on 2 roles (admin/user).",
+          "Modeled entities and persistence with Spring Data JDBC + MySQL, using Flyway for database versioning and migrations.",
+          "Wrote 21 automated tests (unit and integration) with JUnit, Mockito and Testcontainers."
+        ]
+      },
+      "degree": {
+        "period": "2026 — expected 12/2029",
+        "title": "Software Engineering",
+        "subtitle": "<tag2>Bachelor's degree</tag2>",
+        "body": "Universidade Pitágoras Unopar Anhanguera — Mogi das Cruzes/SP (2nd semester, Evening). Relevant courses: CS50 (Harvard), AWS Fundamentals (TreinaWeb) and Excel (Santander Open Academy)."
+      },
+      "flyRank": {
+        "period": "06/2026 — 08/2026",
+        "title": "FlyRank AI Internship",
+        "subtitle": "<tag3>Internship</tag3> — Backend AI Engineering Track",
+        "bullets": [
+          "Final Project (Embeddable Lead Capture Platform): developed a lead capture and qualification platform with an embeddable (cross-domain) widget, rigorous API contracts and asynchronous data processing.",
+          "API and contract design: modeled and implemented REST endpoints with strict schema validation, defensive error handling and well-defined error states.",
+          "Prompt and task engineering: structured instructions with clear boundaries, input/output schemas and success criteria for AI-automated tasks.",
+          "Evaluation and quality (Evals): ensured the AI gives correct answers and follows business rules, without making up information (hallucinating)."
+        ]
+      },
+      "scraper": {
+        "period": "08/2026",
+        "title": "The Polite Scraper & LLM Triage API",
+        "subtitle": "<tag3>FlyRank AI Internship capstone project</tag3> — (Node.js + Express) - (hand-coded + <tag3>AI</tag3>)",
+        "body": "Capstone project for the FlyRank AI Internship — Backend AI Engineering Track.",
+        "bullets": [
+          "Built a resilient web scraping pipeline in Node.js (Cheerio) for collecting, normalizing and validating structured data with Zod, ensuring idempotency and politeness (request delays, timeouts and local cache).",
+          "Built an AI endpoint (POST /triage) for automatic message classification with an LLM (OpenRouter/Ollama), applying strict Zod schema validation with error handling (status 400, 422, 504 and 503) and zero raw LLM text leakage.",
+          "Implemented resilience and production guardrails: explicit 30s timeout, selective retry policy with exponential backoff, schema-failure repair loop, quarantine logs and an environment-variable kill switch.",
+          "Structured an accuracy test suite (evals/run.js) with 8 real cases covering ambiguous scenarios (100% precision) and built a per-token cost logging system for financial predictability in production."
+        ]
+      }
+    }
+  },
+  "skills": {
+    "title": "SKILLS",
+    "subtitle": "Overview of my technical skills, methodologies and languages.",
+    "categories": {
+      "technical": {
+        "title": "Development",
+        "items": ["Java", "Spring Boot", "Node.js", "React.js", "REST APIs", "JavaScript"]
+      },
+      "cloud": {
+        "title": "Cloud & Infrastructure",
+        "items": ["AWS (VPC, EC2, S3)", "CI/CD", "Docker", "Linux"]
+      },
+      "db": {
+        "title": "Database & BI",
+        "items": ["PostgreSQL", "MySQL", "SQL", "Power BI", "KPIs", "SQL modeling and queries"]
+      },
+      "tools": {
+        "title": "Tools & Methodologies",
+        "items": ["Git", "JWT", "OAuth2", "Scrum"]
+      },
+      "ai": {
+        "title": "AI & Automation",
+        "items": ["Prompt Engineering", "ChatGPT", "Claude Code", "Codex", "Gemini", "OpenCode"]
+      },
+      "soft": {
+        "title": "Personal Qualities",
+        "items": ["Self-taught", "Fast learner", "Organized", "Great at problem solving"]
+      },
+      "lang": {
+        "title": "Languages",
+        "items": [
+          { "name": "English", "detail": "Fluent (Reading and Comprehension) — Intermediate in Writing, Basic in Speaking" },
+          { "name": "Portuguese", "detail": "Native" }
+        ]
+      }
+    }
+  },
+  "trajectory": {
+    "title": "ACADEMIC EDUCATION",
+    "degreeTag": "BACHELOR'S DEGREE",
+    "degreeTitle": "Software Engineering",
+    "university": "Universidade Pitágoras Unopar Anhanguera — Mogi das Cruzes/SP",
+    "semester": "2nd semester",
+    "shift": "Evening",
+    "inProgress": "In progress",
+    "gpa": "GPA: 94,0 / 9,4",
+    "period": "2026 — expected 12/2029",
+    "coursesTitle": "RELEVANT COURSES",
+    "certificate": "Certificate",
+    "courses": {
+      "cs50": "CS50: Introduction to Computer Science",
+      "aws": "AWS Fundamentals — Amazon Web Services",
+      "excel": "Excel: From Intermediate to Advanced"
+    }
+  },
+  "contact": {
+    "subtitle": "I'm available for projects, consulting and technical collaborations.",
+    "location": "Jardim do Vale, Itaquaquecetuba/SP",
+    "license": "Driver's License (CNH): Category B",
+    "nameLabel": "Full Name",
+    "namePlaceholder": "What should I call you?",
+    "emailLabel": "Your best Email",
+    "emailPlaceholder": "name@email.com",
+    "messageLabel": "Message",
+    "messagePlaceholder": "How can I help you?",
+    "sending": "Sending...",
+    "send": "Send Message",
+    "success": "Message sent successfully.",
+    "errors": {
+      "empty": "Please fill in all fields before sending.",
+      "generic": "Error sending. Please try again later.",
+      "network": "Network error while sending your message. Please try again.",
+      "fallback": "Error sending. Check the fields and try again."
+    },
+    "mailto": {
+      "subject": "Contact via portfolio: {{name}}",
+      "body": "Name: {{name}}\r\nEmail: {{email}}\r\n\r\n{{message}}"
+    }
+  },
+  "footer": {
+    "copyright": "© 2026 DevPortfolio. All rights reserved."
+  },
+  "blog": {
+    "title": "Technical Articles",
+    "viewAll": "View All",
+    "post1": {
+      "date": "March 2024",
+      "title": "Implementing DDD without accidental complexity",
+      "excerpt": "How to apply Domain Driven Design in small and medium-sized projects without overloading the team.",
+      "imgAlt": "Blog Post 1"
+    },
+    "post2": {
+      "date": "February 2024",
+      "title": "The future of Java APIs with Virtual Threads",
+      "excerpt": "Exploring Project Loom and how it redefines scalability in the Java ecosystem.",
+      "imgAlt": "Blog Post 2"
+    }
+  }
+}

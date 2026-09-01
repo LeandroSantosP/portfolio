@@ -1,7 +1,8 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 
 type Course = {
-  name: string
+  nameKey: string
   platform: string
   logo?: string
   certification?: string
@@ -9,18 +10,18 @@ type Course = {
 
 const courses: Course[] = [
   {
-    name: 'CS50: Introduction to Computer Science',
+    nameKey: 'cs50',
     platform: 'Harvard',
     logo: 'https://media.licdn.com/dms/image/v2/C4E0BAQF5t62bcL0e9g/company-logo_200_200/company-logo_200_200/0/1631318058235?e=1789603200&v=beta&t=FAVluJm-TJah9PDh5ks_T9TO3NQCi4pZDfyr4gSEJO0',
     certification: 'https://certificates.cs50.io/0c61dd6a-88d0-4904-9b43-a365d142d399.pdf?size=letter'
   },
   {
-    name: 'Fundamentos de AWS — Amazon Web Services',
+    nameKey: 'aws',
     platform: 'TreinaWeb',
     certification: 'https://www.linkedin.com/learning/certificates/ee8f011e6fa53d742dc56e947a0763b192fbc0a0ea3aabf2769d0913f3edccb9'
   },
   {
-    name: 'Excel: From Intermediate to Advanced',
+    nameKey: 'excel',
     platform: 'Santander Open Academy',
     logo: 'https://media.licdn.com/dms/image/v2/D4D0BAQHbRU5HNC8kOA/company-logo_200_200/company-logo_200_200/0/1701098269536/santander_universidades_logo?e=1789603200&v=beta&t=5zMzP4KnG38MDzel2BE94njmfdlFq-RSHJOc_DW8E8c',
     certification: 'https://drive.google.com/file/d/1fXtrj12_jZJ02FtIlnzb3obEh-nwX4xh/view?usp=sharing'
@@ -28,48 +29,70 @@ const courses: Course[] = [
 ]
 
 export default function Trajectory() {
+  const { t } = useTranslation()
+
   return (
     <section
-      className="py-xl transition-all duration-700 opacity-100"
+      className="py-xl mt-2xl transition-[transform,opacity] opacity-100"
       id="trajectory"
-      style={{ backgroundColor: 'var(--band)' }}
+      style={{
+        background:
+          'radial-gradient(1200px 600px at 15% -10%, rgba(212,175,55,0.22) 0%, rgba(212,175,55,0) 55%),' +
+          'radial-gradient(900px 500px at 110% 120%, rgba(184,134,11,0.2) 0%, rgba(184,134,11,0) 60%),' +
+          'linear-gradient(180deg, var(--traj-a) 0%, var(--traj-b) 100%)',
+        backdropFilter: 'blur(16px) saturate(140%)',
+        WebkitBackdropFilter: 'blur(16px) saturate(140%)',
+        boxShadow: 'inset 0 1px 0 rgba(255, 252, 245, 0.08)',
+        borderTop: '1px solid rgba(212, 175, 55, 0.25)',
+        borderBottom: '1px solid rgba(212, 175, 55, 0.25)',
+      }}
     >
       <div className="max-w-3xl mx-auto px-gutter">
-        <h2 className="font-headline-lg text-headline-lg mb-6 text-cream">FORMAÇÃO ACADÊMICA</h2>
+        <h2
+          className="font-headline-lg text-headline-lg mb-6 font-semibold"
+          style={{ color: 'var(--text)', textShadow: '0 2px 4px rgba(0,0,0,0.15)' }}
+        >
+          {t('trajectory.title')}
+        </h2>
 
         <div className="rounded-md p-6 border border-outline-variant/20" style={{ backgroundColor: 'var(--surface)', color: 'var(--text)' }}>
           <div className="flex items-start justify-between gap-4 flex-wrap">
             <div className="flex items-start gap-4">
               <span className="material-symbols-outlined text-primary text-3xl leading-none mt-1" aria-hidden>school</span>
               <div>
-                <span className="font-label-sm text-label-sm text-on-tertiary-container">BACHARELADO</span>
-                <h3 className="font-headline-md text-headline-md text-primary">Engenharia de Software</h3>
-                <div className="text-secondary font-body-md text-body-md">Universidade Pitágoras Unopar Anhanguera — Mogi das Cruzes/SP</div>
+                <span className="font-label-sm text-label-sm text-on-tertiary-container">{t('trajectory.degreeTag')}</span>
+                <h3 className="font-headline-md text-headline-md text-primary">{t('trajectory.degreeTitle')}</h3>
+                <div className="text-secondary font-body-md text-body-md">{t('trajectory.university')}</div>
                 <div className="flex flex-wrap gap-2 mt-4">
-                  <span className="bg-surface-container-high px-3 py-1 rounded-full font-label-sm text-label-sm text-on-surface-variant">2º semestre</span>
-                  <span className="bg-surface-container-high px-3 py-1 rounded-full font-label-sm text-label-sm text-on-surface-variant">Noturno</span>
-                  <span className="bg-surface-container-high px-3 py-1 rounded-full font-label-sm text-label-sm text-on-surface-variant">Em andamento</span>
-                  <span className="bg-surface-container-high px-3 py-1 rounded-full font-label-sm text-label-sm text-on-surface-variant">CR: 94,0 / 9,4</span>
+                  <span className="bg-surface-container-high px-3 py-1 rounded-full font-label-sm text-label-sm text-on-surface-variant">{t('trajectory.semester')}</span>
+                  <span className="bg-surface-container-high px-3 py-1 rounded-full font-label-sm text-label-sm text-on-surface-variant">{t('trajectory.shift')}</span>
+                  <span className="bg-surface-container-high px-3 py-1 rounded-full font-label-sm text-label-sm text-on-surface-variant">{t('trajectory.inProgress')}</span>
+                  <span className="bg-surface-container-high px-3 py-1 rounded-full font-label-sm text-label-sm text-on-surface-variant">{t('trajectory.gpa')}</span>
                 </div>
               </div>
             </div>
-            <div className="text-sm text-secondary shrink-0">2026 — previsão 12/2029</div>
+            <div className="text-sm text-secondary shrink-0">{t('trajectory.period')}</div>
           </div>
         </div>
 
-        <h3 className="font-headline-md text-headline-md mb-4 mt-10 text-cream">CURSOS RELEVANTES</h3>
+        <h3
+          className="font-headline-md text-headline-md mb-4 mt-10 font-semibold"
+          style={{ color: 'var(--text)', textShadow: '0 2px 4px rgba(0,0,0,0.15)' }}
+        >
+          {t('trajectory.coursesTitle')}
+        </h3>
 
         <div className="space-y-3">
           {courses.map(c => (
-            <div key={c.name} className="flex items-center justify-between gap-4 rounded-md p-5 border border-outline-variant/20" style={{ backgroundColor: 'var(--surface)', color: 'var(--text)' }}>
-              <div className="flex items-center gap-4">
+            <div key={c.nameKey} className="flex items-center justify-between gap-4 flex-wrap rounded-md p-5 border border-outline-variant/20" style={{ backgroundColor: 'var(--surface)', color: 'var(--text)' }}>
+              <div className="flex items-center gap-4 min-w-0">
                 {c.logo ? (
                   <img src={c.logo} alt={`Logo ${c.platform}`} className="w-10 h-10 rounded-full object-cover shrink-0" />
                 ) : (
                   <span className="material-symbols-outlined text-secondary leading-none" aria-hidden>workspace_premium</span>
                 )}
                 <div>
-                  <div className="font-semibold text-primary">{c.name}</div>
+                  <div className="font-semibold text-primary">{t(`trajectory.courses.${c.nameKey}`)}</div>
                   <div className="text-sm text-secondary">{c.platform}</div>
                 </div>
               </div>
@@ -81,7 +104,7 @@ export default function Trajectory() {
                   className="inline-flex items-center gap-2 text-primary font-label-md text-label-md border border-outline-variant px-4 py-2 rounded-lg hover:bg-surface-container transition-colors whitespace-nowrap shrink-0"
                 >
                   <span className="material-symbols-outlined text-[16px]" aria-hidden>verified</span>
-                  Certificado
+                  {t('trajectory.certificate')}
                 </a>
               )}
             </div>

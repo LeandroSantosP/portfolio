@@ -1,0 +1,229 @@
+{
+  "meta": {
+    "title": "DevPortfolio | Engenheiro de Software",
+    "description": "Portfólio de Leandro Pereira dos Santos — Estudante de Engenharia de Software, foco em Java, Spring Boot, Node.js, APIs REST, dados e IA."
+  },
+  "common": {
+    "downloadCv": "Download CV",
+    "aria": {
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "email": "Email"
+    }
+  },
+  "nav": {
+    "about": "Sobre",
+    "experience": "Experiências",
+    "projects": "Projetos",
+    "skills": "Habilidades",
+    "academic": "Formação Acadêmica",
+    "contact": "Contato",
+    "language": "Selecionar idioma",
+    "themeLight": "Ativar modo claro",
+    "themeDark": "Ativar modo escuro",
+    "menu": "Abrir menu de navegação",
+    "closeMenu": "Fechar menu de navegação"
+  },
+  "heroAbout": {
+    "available": "Disponível para trabalho remoto ou presencial",
+    "titleStart": "Estudante de Engenharia de Software &",
+    "titleHighlight": "Software, Dados & IA",
+    "tagline": "Buscando atuar como Estagiário TI ou Desenvolvedor Júnior, com foco em Java, Spring Boot, Node.js e APIs REST.",
+    "intro": "Com conhecimentos em AWS, Docker, CI/CD, React.js e metodologias ágeis, aplicando IA e dados para resolver problemas técnicos e melhorar processos.",
+    "ctaProjects": "Projetos",
+    "ctaAbout": "Sobre",
+    "ctaContact": "Contato",
+    "paragraphs": [
+      "Sou um profissional em formação em Engenharia de Software, com experiência prática em desenvolvimento de APIs REST, automação, banco de dados e projetos de inteligência artificial. Autodidata, organizado e com forte interesse em aplicar IA e dados para resolver problemas técnicos.",
+      "Automatizei tarefas com Claude Code, Codex, Gemini e OpenCode. Meu foco está em código limpo, arquitetura em camadas e APIs bem contratadas que evoluem com o negócio amanhã."
+    ],
+    "imgAlt": "Engenheiro de Software"
+  },
+  "hero": {
+    "available": "Disponível para novos projetos",
+    "titleStart": "Engenheiro de Software &",
+    "titleHighlight": "Web Developer",
+    "tagline": "Especialista em Java & Spring Boot, focado em arquiteturas escaláveis e experiências de usuário refinadas.",
+    "ctaProjects": "Projetos",
+    "ctaAbout": "Sobre Mim"
+  },
+  "about": {
+    "heading": "Arquitetando soluções robustas com elegância técnica.",
+    "paragraphs": [
+      "Sou um profissional em formação em Engenharia de Software, com experiência prática em desenvolvimento de APIs REST, automação, banco de dados e projetos de inteligência artificial. Autodidata, organizado e com forte interesse em aplicar IA e dados para resolver problemas técnicos, contribuindo para melhorias de processos e inovação.",
+      "Acredito que o código deve ser tão legível quanto uma boa prosa. Meu foco está em código limpo, arquitetura em camadas e APIs bem contratadas, que não apenas funcionam hoje, mas evoluem com o negócio amanhã.",
+      "Automatizo tarefas com Claude Code, Codex, Gemini e OpenCode. Quando não estou programando, estou explorando novas tendências em IA, cloud e open-source."
+    ],
+    "imgAlt": "Engenheiro de Software"
+  },
+  "experience": {
+    "title": "EXPERIÊNCIAS",
+    "role": "FlyRank AI Internship / <tag>Estágio</tag> — Backend AI Engineering Track",
+    "period": "06/2026 — 08/2026",
+    "bullets": [
+      "Projeto Final (Embeddable Lead Capture Platform): desenvolvi plataforma para captura e qualificação de leads com widget incorporável (cross-domain), contratos de API rigorosos e processamento assíncrono de dados.",
+      "Design de contratos e APIs: modelagem e implementação de endpoints REST com validação estrita de esquemas (schemas), tratamento defensivo de falhas e estados de erro bem definidos.",
+      "Engenharia de prompt e tarefas: estruturação de instruções com limites claros, esquemas de entrada/saída e critérios de sucesso para tarefas automatizadas por IA.",
+      "Avaliação e qualidade (Evals): garanti que a IA dá respostas corretas e segue as regras do negócio, sem inventar informações (alucinar)."
+    ]
+  },
+  "timeline": {
+    "title": "LINHA DO TEMPO",
+    "subtitle": "Trajetória completa: projetos, formação e experiências.",
+    "githubPrefix": "GitHub",
+    "events": {
+      "controlApi": {
+        "period": "2024",
+        "title": "Control API",
+        "subtitle": "<tag1>Projeto pessoal</tag1> — Sistema de Controle Financeiro Pessoal — (Node.js + React) - (hand-coded)",
+        "body": "Projeto pessoal para controle financeiro com autenticação JWT, transações categorizadas, relatórios PDF, upload de imagens e metas mensais.",
+        "bullets": [
+          "Implementei autenticação stateless com JWT, protegendo todas as rotas privadas via middleware de autorização.",
+          "Desenvolvi sistema de transações com categorização, recorrência e 5 filtros dinâmicos (mês, inscrições, recorrentes, receitas, finalizadas), incluindo painel com gráfico comparando maior/menor transação por mês.",
+          "Implementei geração de relatórios em PDF com Handlebars, com filtro por período e por categoria (despesas/receitas/inscrições).",
+          "Integrei upload de imagens com Firebase Storage.",
+          "Criei sistema de metas financeiras mensais com visualização gráfica de progresso (meta vs. valor realizado)."
+        ]
+      },
+      "sellEcom": {
+        "period": "03/2025",
+        "title": "Sell Ecom",
+        "subtitle": "<tag1>Projeto pessoal</tag1> — API REST de e-commerce — (Spring-Boot) - (hand-coded + <tag3>IA</tag3>)",
+        "body": "Projeto pessoal de API REST de e-commerce com arquitetura em camadas, autenticação OAuth2 e testes automatizados.",
+        "bullets": [
+          "Desenvolvi API REST de e-commerce com Spring Boot (12+ endpoints, arquitetura em camadas).",
+          "Implementei autenticação e autorização com Spring Security + OAuth2, protegendo 10 endpoints com controle de acesso baseado em 2 roles (admin/user).",
+          "Modelei entidades e persistência com Spring Data JDBC + MySQL, usando Flyway para versionamento e migrations do banco de dados.",
+          "Criei 21 testes automatizados (unitários e integração) com JUnit, Mockito e Testcontainers."
+        ]
+      },
+      "degree": {
+        "period": "2026 — previsão 12/2029",
+        "title": "Engenharia de Software",
+        "subtitle": "<tag2>Bacharelado</tag2>",
+        "body": "Universidade Pitágoras Unopar Anhanguera — Mogi das Cruzes/SP (2º semestre, Noturno). Cursos relevantes: CS50 (Harvard), Fundamentos de AWS (TreinaWeb) e Excel (Santander Open Academy)."
+      },
+      "flyRank": {
+        "period": "06/2026 — 08/2026",
+        "title": "FlyRank AI Internship",
+        "subtitle": "<tag3>Estágio</tag3> — Backend AI Engineering Track",
+        "bullets": [
+          "Projeto Final (Embeddable Lead Capture Platform): desenvolvi plataforma para captura e qualificação de leads com widget incorporável (cross-domain), contratos de API rigorosos e processamento assíncrono de dados.",
+          "Design de contratos e APIs: modelagem e implementação de endpoints REST com validação estrita de esquemas (schemas), tratamento defensivo de falhas e estados de erro bem definidos.",
+          "Engenharia de prompt e tarefas: estruturação de instruções com limites claros, esquemas de entrada/saída e critérios de sucesso para tarefas automatizadas por IA.",
+          "Avaliação e qualidade (Evals): garanti que a IA dá respostas corretas e segue as regras do negócio, sem inventar informações (alucinar)."
+        ]
+      },
+      "scraper": {
+        "period": "08/2026",
+        "title": "The Polite Scraper & LLM Triage API",
+        "subtitle": "<tag3>Projeto de conclusão do FlyRank AI Internship</tag3> — (Node.js + Express) - (hand-coded + <tag3>IA</tag3>)",
+        "body": "Projeto de conclusão do estágio FlyRank AI Internship — Backend AI Engineering Track.",
+        "bullets": [
+          "Desenvolvi pipeline resiliente de web scraping em Node.js (Cheerio) para coleta, normalização e validação de dados estruturados com Zod, garantindo idempotência e politeness (delay de requisições, timeouts e cache local).",
+          "Construí endpoint de IA (POST /triage) para classificação automática de mensagens com LLM (OpenRouter/Ollama), aplicando validação estrita de schema Zod com tratamento de erros (status 400, 422, 504 e 503) e zero vazamento de texto bruto da LLM.",
+          "Implementei guardrails de resiliência e produção: timeout explícito de 30s, política seletiva de retentativas com backoff exponencial, loop de reparo em falhas de schema, logs de quarentena e kill switch via variáveis de ambiente.",
+          "Estruturei suíte de testes de acurácia (evals/run.js) com 8 casos reais cobrindo cenários ambíguos (100% de precisão) e criei sistema de log de custos por token consumido para previsibilidade financeira em produção."
+        ]
+      }
+    }
+  },
+  "skills": {
+    "title": "HABILIDADES / SKILLS",
+    "subtitle": "Visão geral das minhas competências técnicas, metodologias e idiomas.",
+    "categories": {
+      "technical": {
+        "title": "Desenvolvimento",
+        "items": ["Java", "Spring Boot", "Node.js", "React.js", "APIs REST", "JavaScript"]
+      },
+      "cloud": {
+        "title": "Cloud & Infraestrutura",
+        "items": ["AWS (VPC, EC2, S3)", "CI/CD", "Docker", "Linux"]
+      },
+      "db": {
+        "title": "Banco de Dados & BI",
+        "items": ["PostgreSQL", "MySQL", "SQL", "Power BI", "KPIs", "Modelagem e consultas SQL"]
+      },
+      "tools": {
+        "title": "Ferramentas & Metodologias",
+        "items": ["Git", "JWT", "OAuth2", "Scrum"]
+      },
+      "ai": {
+        "title": "IA & Automação",
+        "items": ["Prompt Engineering", "ChatGPT", "Claude Code", "Codex", "Gemini", "OpenCode"]
+      },
+      "soft": {
+        "title": "Qualidades Pessoais",
+        "items": ["Autodidata", "Aprendiz rápido", "Organizado", "Bom em solução de problemas"]
+      },
+      "lang": {
+        "title": "Idiomas",
+        "items": [
+          { "name": "Inglês", "detail": "Fluente (Leitura e Compreensão) — Intermediário em Escrita, Básico em Fala" },
+          { "name": "Português", "detail": "Nativo" }
+        ]
+      }
+    }
+  },
+  "trajectory": {
+    "title": "FORMAÇÃO ACADÊMICA",
+    "degreeTag": "BACHARELADO",
+    "degreeTitle": "Engenharia de Software",
+    "university": "Universidade Pitágoras Unopar Anhanguera — Mogi das Cruzes/SP",
+    "semester": "2º semestre",
+    "shift": "Noturno",
+    "inProgress": "Em andamento",
+    "gpa": "CR: 94,0 / 9,4",
+    "period": "2026 — previsão 12/2029",
+    "coursesTitle": "CURSOS RELEVANTES",
+    "certificate": "Certificado",
+    "courses": {
+      "cs50": "CS50: Introduction to Computer Science",
+      "aws": "Fundamentos de AWS — Amazon Web Services",
+      "excel": "Excel: From Intermediate to Advanced"
+    }
+  },
+  "contact": {
+    "subtitle": "Estou disponível para projetos, consultoria e colaborações técnicas.",
+    "location": "Jardim do Vale, Itaquaquecetuba/SP",
+    "license": "Habilitação (CNH): Categoria B",
+    "nameLabel": "Nome Completo",
+    "namePlaceholder": "Como devo te chamar?",
+    "emailLabel": "Seu melhor E-mail",
+    "emailPlaceholder": "exemplo@email.com",
+    "messageLabel": "Mensagem",
+    "messagePlaceholder": "No que posso te ajudar?",
+    "sending": "Enviando...",
+    "send": "Enviar Mensagem",
+    "success": "Mensagem enviada com sucesso.",
+    "errors": {
+      "empty": "Por favor, preencha todos os campos antes de enviar.",
+      "generic": "Erro ao enviar. Tente novamente mais tarde.",
+      "network": "Erro de rede ao enviar a mensagem. Tente novamente.",
+      "fallback": "Erro ao enviar. Verifique os campos e tente novamente."
+    },
+    "mailto": {
+      "subject": "Contato via portfólio: {{name}}",
+      "body": "Nome: {{name}}\r\nEmail: {{email}}\r\n\r\n{{message}}"
+    }
+  },
+  "footer": {
+    "copyright": "© 2026 DevPortfolio. Todos os direitos reservados."
+  },
+  "blog": {
+    "title": "Artigos Técnicos",
+    "viewAll": "Ver Todos",
+    "post1": {
+      "date": "Março 2024",
+      "title": "Implementando DDD sem complexidade acidental",
+      "excerpt": "Como aplicar Domain Driven Design em projetos de pequeno e médio porte sem sobrecarregar a equipe.",
+      "imgAlt": "Blog Post 1"
+    },
+    "post2": {
+      "date": "Fevereiro 2024",
+      "title": "O futuro das APIs Java com Virtual Threads",
+      "excerpt": "Explorando o Projeto Loom e como ele redefine a escalabilidade no ecossistema Java.",
+      "imgAlt": "Blog Post 2"
+    }
+  }
+}
