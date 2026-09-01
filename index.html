@@ -3,67 +3,88 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#f9f9fb" />
+    <meta name="theme-color" content="#f7f3e8" />
     <title>DevPortfolio | Engenheiro de Software</title>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="apple-touch-icon" href="/favicon.svg" />
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/geist@1.3.0/dist/font-sans.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Karla:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
     <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
             theme: {
                 extend: {
                     "colors": {
-                        "on-secondary-fixed-variant": "#46464b",
-                        "primary": "#030304",
-                        "tertiary-container": "#001c41",
-                        "primary-fixed-dim": "#c8c6c8",
-                        "surface-dim": "#d9dadc",
+                        "umber": "#1a1a1a",
+                        "umber-2": "#262624",
+                        "umber-dark": "#141311",
+                        "umber-2-dark": "#211f1a",
+                        "plaster": "#f7f3e8",
+                        "plaster-2": "#fffcf5",
+                        "plaster-dark": "#1c1a14",
+                        "plaster-2-dark": "#28251c",
+                        "rust": "#d4af37",
+                        "rust-dark": "#e8c766",
+                        "bottle": "#0f5132",
+                        "bottle-dark": "#1f9d63",
+                        "brass": "#b8860b",
+                        "brass-dark": "#f0c419",
+                        "ink": "#1a1a1a",
+                        "ink-dark": "#f5f0e0",
+                        "ink-soft": "#4f4940",
+                        "ink-soft-dark": "#c9c0ab",
+                        "cream": "#f7f3e8",
+                        "cream-soft": "#e6dcc0",
+                        "on-secondary-fixed-variant": "#4f4940",
+                        "primary": "#d4af37",
+                        "tertiary-container": "#b8860b",
+                        "primary-fixed-dim": "#0f5132",
+                        "surface-dim": "#e8dfcc",
                         "on-error": "#ffffff",
-                        "on-surface-variant": "#46464a",
-                        "on-secondary": "#ffffff",
-                        "on-surface": "#1a1c1d",
+                        "on-surface-variant": "#4f4940",
+                        "on-secondary": "#f7f3e8",
+                        "on-surface": "#1a1a1a",
                         "error": "#ba1a1a",
-                        "surface-container-low": "#f3f3f5",
-                        "surface-container-lowest": "#ffffff",
-                        "inverse-on-surface": "#f0f0f2",
-                        "surface-tint": "#5f5e60",
-                        "secondary-fixed": "#e3e2e7",
-                        "surface-variant": "#e2e2e4",
-                        "on-tertiary-fixed-variant": "#00458e",
-                        "background": "#f9f9fb",
-                        "on-primary": "#ffffff",
-                        "secondary-container": "#e0dfe4",
-                        "outline-variant": "#c7c6ca",
-                        "on-secondary-container": "#626267",
-                        "surface-bright": "#f9f9fb",
-                        "secondary": "#5e5e63",
-                        "tertiary-fixed": "#d7e3ff",
-                        "surface-container": "#eeeef0",
-                        "surface": "#f9f9fb",
-                        "tertiary": "#00030b",
-                        "on-secondary-fixed": "#1a1b1f",
-                        "primary-container": "#1d1d1f",
-                        "tertiary-fixed-dim": "#aac7ff",
-                        "on-tertiary-container": "#3b84eb",
+                        "surface-container-low": "#fffcf5",
+                        "surface-container-lowest": "#fffcf5",
+                        "inverse-on-surface": "#f7f3e8",
+                        "surface-tint": "#d4af37",
+                        "secondary-fixed": "#fffcf5",
+                        "surface-variant": "#f0ead9",
+                        "on-tertiary-fixed-variant": "#b8860b",
+                        "background": "#f7f3e8",
+                        "on-primary": "#f7f3e8",
+                        "secondary-container": "#fffcf5",
+                        "outline-variant": "#cbc0a6",
+                        "on-secondary-container": "#0f5132",
+                        "surface-bright": "#f7f3e8",
+                        "secondary": "#4f4940",
+                        "tertiary-fixed": "#b8860b",
+                        "surface-container": "#fffcf5",
+                        "surface": "#f7f3e8",
+                        "tertiary": "#b8860b",
+                        "on-secondary-fixed": "#1a1a1a",
+                        "primary-container": "#0f5132",
+                        "tertiary-fixed-dim": "#b8860b",
+                        "on-tertiary-container": "#b8860b",
                         "on-error-container": "#93000a",
-                        "on-tertiary-fixed": "#001b3e",
-                        "surface-container-highest": "#e2e2e4",
-                        "outline": "#77767b",
-                        "on-tertiary": "#ffffff",
-                        "on-primary-fixed": "#1b1b1d",
-                        "on-background": "#1a1c1d",
-                        "secondary-fixed-dim": "#c7c6cb",
-                        "inverse-primary": "#c8c6c8",
-                        "on-primary-container": "#868587",
-                        "inverse-surface": "#2f3132",
-                        "primary-fixed": "#e4e2e4",
+                        "on-tertiary-fixed": "#b8860b",
+                        "surface-container-highest": "#fffcf5",
+                        "outline": "#9a8f78",
+                        "on-tertiary": "#f7f3e8",
+                        "on-primary-fixed": "#f7f3e8",
+                        "on-background": "#1a1a1a",
+                        "secondary-fixed-dim": "#e8dfcc",
+                        "inverse-primary": "#e8c766",
+                        "on-primary-container": "#0f5132",
+                        "inverse-surface": "#211f1a",
+                        "primary-fixed": "#e8c766",
                         "error-container": "#ffdad6",
-                        "on-primary-fixed-variant": "#474649",
-                        "surface-container-high": "#e8e8ea"
+                        "on-primary-fixed-variant": "#0f5132",
+                        "surface-container-high": "#fffcf5"
                     },
                     "borderRadius": {
                         "DEFAULT": "0.25rem",
@@ -83,14 +104,14 @@
                         "md": "24px"
                     },
                     "fontFamily": {
-                        "label-md": ["Geist"],
-                        "body-lg": ["Inter"],
-                        "headline-lg": ["Geist"],
-                        "body-md": ["Inter"],
-                        "label-sm": ["Geist"],
-                        "headline-xl": ["Geist"],
-                        "headline-xl-mobile": ["Geist"],
-                        "headline-md": ["Geist"]
+                        "label-md": ["Space Mono"],
+                        "body-lg": ["Karla"],
+                        "headline-lg": ["Fraunces"],
+                        "body-md": ["Karla"],
+                        "label-sm": ["Space Mono"],
+                        "headline-xl": ["Fraunces"],
+                        "headline-xl-mobile": ["Fraunces"],
+                        "headline-md": ["Fraunces"]
                     },
                     "fontSize": {
                         "label-md": ["14px", {"lineHeight": "1.4", "letterSpacing": "0.02em", "fontWeight": "500"}],
@@ -108,11 +129,11 @@
     </script>
     <style>
         body {
-            background-color: #f9f9fb;
-            font-family: 'Inter', sans-serif;
+            background-color: #f7f3e8;
+            font-family: 'Karla', sans-serif;
             -webkit-font-smoothing: antialiased;
         }
-        .geist { font-family: 'Geist', sans-serif; }
+        .fraunces { font-family: 'Fraunces', serif; }
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
@@ -130,23 +151,31 @@
            The TopNav toggles the 'dark' class on <html>, which flips these.
         */
         :root {
-            --bg: #f9f9fb;
-            --text: #1a1c1d;
-            --surface: #f9f9fb;
-            --primary: #030304;
-            --on-primary: #ffffff;
-            --outline: #c7c6ca;
-            --secondary: #5e5e63;
+            --bg: #f7f3e8;
+            --text: #1a1a1a;
+            --surface: #fffcf5;
+            --primary: #d4af37;
+            --on-primary: #f7f3e8;
+            --outline: #cbc0a6;
+            --secondary: #4f4940;
+            --bottle: #0f5132;
+            --cream: #f7f3e8;
+            --cream-soft: #e6dcc0;
+            --band: #1a1a1a;
         }
 
         .dark {
-            --bg: #0b0b0c;
-            --text: #e6e6e6;
-            --surface: #111317;
-            --primary: #ffffff;
-            --on-primary: #0b0b0c;
-            --outline: #2f3132;
-            --secondary: #c7c7c7;
+            --bg: #141311;
+            --text: #f5f0e0;
+            --surface: #211f1a;
+            --primary: #e8c766;
+            --on-primary: #1a1a1a;
+            --outline: #3a362d;
+            --secondary: #c9c0ab;
+            --bottle: #1f9d63;
+            --cream: #f7f3e8;
+            --cream-soft: #e6dcc0;
+            --band: #262624;
         }
 
         /* Apply variables to base elements */
@@ -161,9 +190,12 @@
         html.dark .topnav-contact { background-color: var(--primary) !important; color: var(--on-primary) !important; }
         .topnav-contact:hover { opacity: 0.9; }
 
-        /* Utility overrides for a consistent theme switch */
+        /* Utility overrides for a consistent theme switch.
+           --primary drives CTA button backgrounds (gold).
+           --text drives heading/ink text so headlines stay dark ink.
+        */
         .text-on-background { color: var(--text) !important; }
-        .text-primary { color: var(--primary) !important; }
+        .text-primary { color: var(--text) !important; }
         .text-secondary { color: var(--secondary) !important; }
         .text-on-primary { color: var(--on-primary) !important; }
 

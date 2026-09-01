@@ -29,9 +29,13 @@ const courses: Course[] = [
 
 export default function Trajectory() {
   return (
-    <section className="py-xl transition-all duration-700 opacity-100" id="trajectory">
-      <div className="max-w-3xl mx-auto">
-        <h2 className="font-headline-lg text-headline-lg text-primary mb-6">FORMAÇÃO ACADÊMICA</h2>
+    <section
+      className="py-xl transition-all duration-700 opacity-100"
+      id="trajectory"
+      style={{ backgroundColor: 'var(--band)' }}
+    >
+      <div className="max-w-3xl mx-auto px-gutter">
+        <h2 className="font-headline-lg text-headline-lg mb-6 text-cream">FORMAÇÃO ACADÊMICA</h2>
 
         <div className="rounded-md p-6 border border-outline-variant/20" style={{ backgroundColor: 'var(--surface)', color: 'var(--text)' }}>
           <div className="flex items-start justify-between gap-4 flex-wrap">
@@ -45,6 +49,7 @@ export default function Trajectory() {
                   <span className="bg-surface-container-high px-3 py-1 rounded-full font-label-sm text-label-sm text-on-surface-variant">2º semestre</span>
                   <span className="bg-surface-container-high px-3 py-1 rounded-full font-label-sm text-label-sm text-on-surface-variant">Noturno</span>
                   <span className="bg-surface-container-high px-3 py-1 rounded-full font-label-sm text-label-sm text-on-surface-variant">Em andamento</span>
+                  <span className="bg-surface-container-high px-3 py-1 rounded-full font-label-sm text-label-sm text-on-surface-variant">CR: 94,0 / 9,4</span>
                 </div>
               </div>
             </div>
@@ -52,7 +57,7 @@ export default function Trajectory() {
           </div>
         </div>
 
-        <h3 className="font-headline-md text-headline-md text-primary mb-4 mt-10">CURSOS RELEVANTES</h3>
+        <h3 className="font-headline-md text-headline-md mb-4 mt-10 text-cream">CURSOS RELEVANTES</h3>
 
         <div className="space-y-3">
           {courses.map(c => (

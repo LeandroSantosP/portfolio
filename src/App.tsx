@@ -83,13 +83,17 @@ export default function App(): JSX.Element {
   return (
     <div>
       <TopNav />
-      <main ref={el => (mainRef.current = el)} className="max-w-container-max mx-auto px-gutter">
-        <HeroAbout />
-        <Experience />
-        <Timeline />
-        <Skills />
+      <main ref={el => (mainRef.current = el)}>
+        <div className="max-w-container-max mx-auto px-gutter">
+          <HeroAbout />
+          <Experience />
+          <Timeline />
+          <Skills />
+        </div>
         <Trajectory />
-        <Contact />
+        <div className="max-w-container-max mx-auto px-gutter">
+          <Contact />
+        </div>
       </main>
       <Footer />
     </div>
