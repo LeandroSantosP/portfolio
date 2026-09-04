@@ -16,15 +16,21 @@ const courses: Course[] = [
     certification: 'https://certificates.cs50.io/0c61dd6a-88d0-4904-9b43-a365d142d399.pdf?size=letter'
   },
   {
-    nameKey: 'aws',
-    platform: 'TreinaWeb',
-    certification: 'https://www.linkedin.com/learning/certificates/ee8f011e6fa53d742dc56e947a0763b192fbc0a0ea3aabf2769d0913f3edccb9'
-  },
-  {
     nameKey: 'excel',
     platform: 'Santander Open Academy',
     logo: 'https://media.licdn.com/dms/image/v2/D4D0BAQHbRU5HNC8kOA/company-logo_200_200/company-logo_200_200/0/1701098269536/santander_universidades_logo?e=1789603200&v=beta&t=5zMzP4KnG38MDzel2BE94njmfdlFq-RSHJOc_DW8E8c',
     certification: 'https://drive.google.com/file/d/1fXtrj12_jZJ02FtIlnzb3obEh-nwX4xh/view?usp=sharing'
+  },
+  {
+    nameKey: 'efset',
+    platform: 'EF SET',
+    logo: 'https://media.licdn.com/dms/image/v2/D4E0BAQEw-1S8jictTA/company-logo_200_200/B4EZdFpZBcH0AI-/0/1749220168176/efset_logo?e=1790208000&v=beta&t=IoCe37BFJEgGl3g33Fg949Dug2nPXBfRIQewgn6M8oE',
+    certification: 'https://cert.efset.org/en/ebiMhd'
+  },
+  {
+    nameKey: 'aws',
+    platform: 'TreinaWeb',
+    certification: 'https://www.linkedin.com/learning/certificates/ee8f011e6fa53d742dc56e947a0763b192fbc0a0ea3aabf2769d0913f3edccb9'
   }
 ]
 
