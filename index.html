@@ -201,6 +201,17 @@
         /* Stronger dark-specific override in case Tailwind utilities add transparency */
         html.dark nav { background-color: var(--surface) !important; color: var(--text) !important; }
         html.dark nav * { color: var(--text) !important; }
+        html.dark #mobile-nav-menu {
+            background-color: color-mix(in srgb, var(--surface) 94%, transparent) !important;
+            color: var(--text) !important;
+        }
+        html.dark #mobile-nav-menu a {
+            color: var(--secondary) !important;
+        }
+        html.dark #mobile-nav-menu a:hover {
+            color: var(--text) !important;
+            background-color: color-mix(in srgb, var(--primary) 14%, transparent) !important;
+        }
         /* Contact button uses theme tokens so it flips automatically when variables change */
         .topnav-contact { background-color: var(--primary) !important; color: var(--on-primary) !important; }
         html.dark .topnav-contact { background-color: var(--primary) !important; color: var(--on-primary) !important; }

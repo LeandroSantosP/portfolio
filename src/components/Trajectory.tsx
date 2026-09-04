@@ -45,23 +45,33 @@ export default function Trajectory() {
         background:
           'radial-gradient(1200px 600px at 15% -10%, rgba(212,175,55,0.22) 0%, rgba(212,175,55,0) 55%),' +
           'radial-gradient(900px 500px at 110% 120%, rgba(184,134,11,0.2) 0%, rgba(184,134,11,0) 60%),' +
-          'linear-gradient(180deg, var(--traj-a) 0%, var(--traj-b) 100%)',
-        backdropFilter: 'blur(16px) saturate(140%)',
-        WebkitBackdropFilter: 'blur(16px) saturate(140%)',
-        boxShadow: 'inset 0 1px 0 rgba(255, 252, 245, 0.08)',
-        borderTop: '1px solid rgba(212, 175, 55, 0.25)',
-        borderBottom: '1px solid rgba(212, 175, 55, 0.25)',
+          'linear-gradient(180deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0.04) 100%)',
+        backgroundColor: 'color-mix(in srgb, var(--surface) 62%, transparent)',
+        backdropFilter: 'blur(24px) saturate(150%)',
+        WebkitBackdropFilter: 'blur(24px) saturate(150%)',
+        boxShadow: 'inset 0 1px 0 rgba(255, 252, 245, 0.3), 0 18px 48px rgba(0, 0, 0, 0.08)',
+        borderTop: '1px solid color-mix(in srgb, var(--outline) 70%, transparent)',
+        borderBottom: '1px solid color-mix(in srgb, var(--outline) 55%, transparent)',
       }}
     >
       <div className="max-w-3xl mx-auto px-gutter">
         <h2
           className="font-headline-lg text-headline-lg mb-6 font-semibold"
-          style={{ color: 'var(--text)', textShadow: '0 2px 4px rgba(0,0,0,0.15)' }}
+          style={{ color: 'var(--text)', textShadow: '0 1px 2px rgba(255, 255, 255, 0.35)' }}
         >
           {t('trajectory.title')}
         </h2>
 
-        <div className="rounded-md p-6 border border-outline-variant/20" style={{ backgroundColor: 'var(--surface)', color: 'var(--text)' }}>
+        <div
+          className="rounded-md p-6 border border-outline-variant/20"
+          style={{
+            backgroundColor: 'color-mix(in srgb, var(--surface) 78%, transparent)',
+            color: 'var(--text)',
+            backdropFilter: 'blur(18px) saturate(140%)',
+            WebkitBackdropFilter: 'blur(18px) saturate(140%)',
+            boxShadow: 'inset 0 1px 0 rgba(255, 255, 255, 0.28), 0 10px 30px rgba(0, 0, 0, 0.08)',
+          }}
+        >
           <div className="flex items-start justify-between gap-4 flex-wrap">
             <div className="flex items-start gap-4">
               <span className="material-symbols-outlined text-primary text-3xl leading-none mt-1" aria-hidden>school</span>
@@ -70,10 +80,10 @@ export default function Trajectory() {
                 <h3 className="font-headline-md text-headline-md text-primary">{t('trajectory.degreeTitle')}</h3>
                 <div className="text-secondary font-body-md text-body-md">{t('trajectory.university')}</div>
                 <div className="flex flex-wrap gap-2 mt-4">
-                  <span className="bg-surface-container-high px-3 py-1 rounded-full font-label-sm text-label-sm text-on-surface-variant">{t('trajectory.semester')}</span>
-                  <span className="bg-surface-container-high px-3 py-1 rounded-full font-label-sm text-label-sm text-on-surface-variant">{t('trajectory.shift')}</span>
-                  <span className="bg-surface-container-high px-3 py-1 rounded-full font-label-sm text-label-sm text-on-surface-variant">{t('trajectory.inProgress')}</span>
-                  <span className="bg-surface-container-high px-3 py-1 rounded-full font-label-sm text-label-sm text-on-surface-variant">{t('trajectory.gpa')}</span>
+                  <span className="px-3 py-1 rounded-full font-label-sm text-label-sm" style={{ backgroundColor: 'color-mix(in srgb, var(--primary) 18%, var(--surface))', color: 'var(--text)' }}>{t('trajectory.semester')}</span>
+                  <span className="px-3 py-1 rounded-full font-label-sm text-label-sm" style={{ backgroundColor: 'color-mix(in srgb, var(--primary) 18%, var(--surface))', color: 'var(--text)' }}>{t('trajectory.shift')}</span>
+                  <span className="px-3 py-1 rounded-full font-label-sm text-label-sm" style={{ backgroundColor: 'color-mix(in srgb, var(--primary) 18%, var(--surface))', color: 'var(--text)' }}>{t('trajectory.inProgress')}</span>
+                  <span className="px-3 py-1 rounded-full font-label-sm text-label-sm" style={{ backgroundColor: 'color-mix(in srgb, var(--primary) 18%, var(--surface))', color: 'var(--text)' }}>{t('trajectory.gpa')}</span>
                 </div>
               </div>
             </div>
@@ -83,14 +93,24 @@ export default function Trajectory() {
 
         <h3
           className="font-headline-md text-headline-md mb-4 mt-10 font-semibold"
-          style={{ color: 'var(--text)', textShadow: '0 2px 4px rgba(0,0,0,0.15)' }}
+          style={{ color: 'var(--text)', textShadow: '0 1px 2px rgba(255, 255, 255, 0.35)' }}
         >
           {t('trajectory.coursesTitle')}
         </h3>
 
         <div className="space-y-3">
           {courses.map(c => (
-            <div key={c.nameKey} className="flex items-center justify-between gap-4 flex-wrap rounded-md p-5 border border-outline-variant/20" style={{ backgroundColor: 'var(--surface)', color: 'var(--text)' }}>
+            <div
+              key={c.nameKey}
+              className="flex items-center justify-between gap-4 flex-wrap rounded-md p-5 border border-outline-variant/20"
+              style={{
+                backgroundColor: 'color-mix(in srgb, var(--surface) 78%, transparent)',
+                color: 'var(--text)',
+                backdropFilter: 'blur(18px) saturate(140%)',
+                WebkitBackdropFilter: 'blur(18px) saturate(140%)',
+                boxShadow: 'inset 0 1px 0 rgba(255, 255, 255, 0.28), 0 10px 30px rgba(0, 0, 0, 0.08)',
+              }}
+            >
               <div className="flex items-center gap-4 min-w-0">
                 {c.logo ? (
                   <img src={c.logo} alt={`Logo ${c.platform}`} className="w-10 h-10 rounded-full object-cover shrink-0" />
