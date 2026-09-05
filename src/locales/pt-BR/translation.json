@@ -142,7 +142,7 @@
       },
       "db": {
         "title": "Banco de Dados & BI",
-        "items": ["PostgreSQL", "MySQL", "SQL", "Power BI", "KPIs", "Modelagem e consultas SQL"]
+        "items": ["PostgreSQL", "MySQL", "SQL", "Power BI", "Modelagem e consultas SQL"]
       },
       "tools": {
         "title": "Ferramentas & Metodologias",
