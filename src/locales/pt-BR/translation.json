@@ -181,7 +181,9 @@
       "cs50": "CS50: Introduction to Computer Science",
       "aws": "Fundamentos de AWS — Amazon Web Services",
       "excel": "Excel: From Intermediate to Advanced",
-      "efset": "Certificado de Inglês EF SET — CEFR C1"
+      "efset": "Certificado de Inglês EF SET — CEFR C1",
+      "flyrank": "Certificado de Conclusão do Estágio FlyRank AI",
+      "flyrankRecommendation": "Carta de Recomendação — FlyRank AI"
     }
   },
   "contact": {

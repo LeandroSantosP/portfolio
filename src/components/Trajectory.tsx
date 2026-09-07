@@ -6,6 +6,7 @@ type Course = {
   platform: string
   logo?: string
   certification?: string
+  verificationId?: string
 }
 
 const courses: Course[] = [
@@ -31,6 +32,19 @@ const courses: Course[] = [
     nameKey: 'aws',
     platform: 'TreinaWeb',
     certification: 'https://www.linkedin.com/learning/certificates/ee8f011e6fa53d742dc56e947a0763b192fbc0a0ea3aabf2769d0913f3edccb9'
+  },
+  {
+    nameKey: 'flyrank',
+    platform: 'FlyRank AI',
+    logo: 'https://media.licdn.com/dms/image/v2/D4D0BAQFImJOWJQrw7Q/company-logo_400_400/B4DZ47fBzzJ8AU-/0/1779114450389/flyrank_logo?e=1790208000&v=beta&t=FTn_TUS3pQslZgQ6InBMrA6vA7s45KvaEdEeIdV6TOg',
+    certification: 'https://internship.flyrank.ai/api/documents/5b77eac7-51bd-46d8-9a80-5db37f32c2d2/pdf#navpanes=0&pagemode=none',
+    verificationId: 'FR-D11-86497-9B812'
+  },
+  {
+    nameKey: 'flyrankRecommendation',
+    platform: 'FlyRank AI',
+    logo: 'https://media.licdn.com/dms/image/v2/D4D0BAQFImJOWJQrw7Q/company-logo_400_400/B4DZ47fBzzJ8AU-/0/1779114450389/flyrank_logo?e=1790208000&v=beta&t=FTn_TUS3pQslZgQ6InBMrA6vA7s45KvaEdEeIdV6TOg',
+    certification: 'https://internship.flyrank.ai/api/documents/87f38ed8-f6e4-445c-a649-659f5d82a7d5/pdf#navpanes=0&pagemode=none'
   }
 ]
 
@@ -120,6 +134,9 @@ export default function Trajectory() {
                 <div>
                   <div className="font-semibold text-primary">{t(`trajectory.courses.${c.nameKey}`)}</div>
                   <div className="text-sm text-secondary">{c.platform}</div>
+                  {c.verificationId && (
+                    <div className="text-xs text-secondary mt-1">ID: {c.verificationId}</div>
+                  )}
                 </div>
               </div>
               {c.certification && (

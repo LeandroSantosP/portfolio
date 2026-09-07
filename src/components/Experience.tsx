@@ -22,9 +22,16 @@ export default function Experience(): JSX.Element {
         }}
       >
         <div className="flex justify-between items-start">
-          <div>
-            <div className="font-semibold text-primary">
-              <Trans i18nKey="experience.role" components={{ tag: <span className="text-on-tertiary-container" /> }} />
+          <div className="flex items-center gap-3 min-w-0">
+            <img
+              src="https://media.licdn.com/dms/image/v2/D4D0BAQFImJOWJQrw7Q/company-logo_400_400/B4DZ47fBzzJ8AU-/0/1779114450389/flyrank_logo?e=1790208000&v=beta&t=FTn_TUS3pQslZgQ6InBMrA6vA7s45KvaEdEeIdV6TOg"
+              alt="Logo FlyRank AI"
+              className="w-10 h-10 rounded-full object-cover shrink-0"
+            />
+            <div>
+              <div className="font-semibold text-primary">
+                <Trans i18nKey="experience.role" components={{ tag: <span className="text-on-tertiary-container" /> }} />
+              </div>
             </div>
           </div>
           <div className="text-sm text-secondary">{t('experience.period')}</div>
