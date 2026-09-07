@@ -120,10 +120,10 @@
         "subtitle": "<tag3>Projeto de conclusão do FlyRank AI Internship</tag3> — (Node.js + Express) - (hand-coded + <tag3>IA</tag3>)",
         "body": "Projeto de conclusão do estágio FlyRank AI Internship — Backend AI Engineering Track.",
         "bullets": [
-          "Desenvolvi pipeline resiliente de web scraping em Node.js (Cheerio) para coleta, normalização e validação de dados estruturados com Zod, garantindo idempotência e politeness (delay de requisições, timeouts e cache local).",
-          "Construí endpoint de IA (POST /triage) para classificação automática de mensagens com LLM (OpenRouter/Ollama), aplicando validação estrita de schema Zod com tratamento de erros (status 400, 422, 504 e 503) e zero vazamento de texto bruto da LLM.",
-          "Implementei guardrails de resiliência e produção: timeout explícito de 30s, política seletiva de retentativas com backoff exponencial, loop de reparo em falhas de schema, logs de quarentena e kill switch via variáveis de ambiente.",
-          "Estruturei suíte de testes de acurácia (evals/run.js) com 8 casos reais cobrindo cenários ambíguos (100% de precisão) e criei sistema de log de custos por token consumido para previsibilidade financeira em produção."
+          "Plataforma SaaS multi-tenant de captura de leads com widgets embeddables (Node.js + PostgreSQL), incorporáveis em qualquer site via tag <script> e com isolamento rígido entre tenants.",
+          "Endpoint público de submissão com CORS (preflight), validação Zod na fronteira e erros 4xx limpos — sem nunca retornar 500 por erro de usuário.",
+          "Proteção contra abuso com rate limiting (429) e honeypot anti-bot que bloqueia spam sem persistir o lead.",
+          "Enriquecimento de dados com fallback chain de geolocalização (ip-api.com → ipapi.co) e degradação graciosa — o lead é salvo mesmo se os provedores falharem."
         ]
       }
     }

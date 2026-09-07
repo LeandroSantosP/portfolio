@@ -120,10 +120,10 @@
         "subtitle": "<tag3>FlyRank AI Internship capstone project</tag3> — (Node.js + Express) - (hand-coded + <tag3>AI</tag3>)",
         "body": "Capstone project for the FlyRank AI Internship — Backend AI Engineering Track.",
         "bullets": [
-          "Built a resilient web scraping pipeline in Node.js (Cheerio) for collecting, normalizing and validating structured data with Zod, ensuring idempotency and politeness (request delays, timeouts and local cache).",
-          "Built an AI endpoint (POST /triage) for automatic message classification with an LLM (OpenRouter/Ollama), applying strict Zod schema validation with error handling (status 400, 422, 504 and 503) and zero raw LLM text leakage.",
-          "Implemented resilience and production guardrails: explicit 30s timeout, selective retry policy with exponential backoff, schema-failure repair loop, quarantine logs and an environment-variable kill switch.",
-          "Structured an accuracy test suite (evals/run.js) with 8 real cases covering ambiguous scenarios (100% precision) and built a per-token cost logging system for financial predictability in production."
+          "Multi-tenant SaaS lead capture platform with embeddable widgets (Node.js + PostgreSQL), installable on any site via a <script> tag with strict tenant isolation.",
+          "Public submission endpoint with CORS preflight support, Zod validation at the boundary and clean 4xx errors, never returning 500 for user errors.",
+          "Abuse protection with rate limiting (429) and an anti-bot honeypot that blocks spam without persisting the lead.",
+          "Data enrichment with a geolocation fallback chain (ip-api.com -> ipapi.co) and graceful degradation, saving the lead even when providers fail."
         ]
       }
     }
