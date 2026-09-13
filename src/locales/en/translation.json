@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "DevPortfolio | Software Engineer",
+    "title": "Leandro P. Dos Santos | Software Engineer",
     "description": "Leandro Pereira dos Santos portfolio — Software Engineering student, focused on Java, Spring Boot, Node.js, REST APIs, data and AI."
   },
   "common": {
@@ -17,6 +17,7 @@
     "projects": "Projects",
     "skills": "Skills",
     "academic": "Education",
+    "certificates": "Certificates",
     "contact": "Contact",
     "language": "Select language",
     "themeLight": "Switch to light mode",
@@ -37,7 +38,22 @@
       "I am a professional in training in Software Engineering, with hands-on experience in REST API development, automation, databases and artificial intelligence projects. Self-taught, organized and with a strong interest in applying AI and data to solve technical problems.",
       "I have automated tasks with Claude Code, Codex, Gemini and OpenCode. My focus is on clean code, layered architecture and well-contracted APIs that evolve with the business tomorrow."
     ],
-    "imgAlt": "Software Engineer"
+    "imgAlt": "Software Engineer",
+    "scroll": "Scroll to continue"
+  },
+  "stats": {
+    "ariaLabel": "Professional summary",
+    "items": {
+      "education": { "value": "2nd", "label": "semester" },
+      "projects": { "value": "05+", "label": "projects" },
+      "certificates": { "value": "06", "label": "certificates" },
+      "experience": { "value": "01", "label": "internship" }
+    }
+  },
+  "projects": {
+    "eyebrow": "SELECTED WORK",
+    "title": "Recent projects",
+    "viewCode": "View code"
   },
   "hero": {
     "available": "Available for new projects",
@@ -116,9 +132,9 @@
       },
       "scraper": {
         "period": "08/2026",
-        "title": "The Polite Scraper & LLM Triage API",
-        "subtitle": "<tag3>FlyRank AI Internship capstone project</tag3> — (Node.js + Express) - (hand-coded + <tag3>AI</tag3>)",
-        "body": "Capstone project for the FlyRank AI Internship — Backend AI Engineering Track.",
+        "title": "Embeddable Lead Capture Platform & Widget",
+        "subtitle": "<tag1>Personal project</tag1> — (Node.js + Express) - (hand-coded + <tag3>AI</tag3>)",
+        "body": "Multi-tenant SaaS platform for lead capture and an embeddable widget.",
         "bullets": [
           "Multi-tenant SaaS lead capture platform with embeddable widgets (Node.js + PostgreSQL), installable on any site via a <script> tag with strict tenant isolation.",
           "Public submission endpoint with CORS preflight support, Zod validation at the boundary and clean 4xx errors, never returning 500 for user errors.",
@@ -129,7 +145,7 @@
     }
   },
   "skills": {
-    "title": "SKILLS",
+    "title": "TECHNOLOGIES I USE",
     "subtitle": "Overview of my technical skills, methodologies and languages.",
     "categories": {
       "technical": {
@@ -186,6 +202,25 @@
       "flyrankRecommendation": "Letter of Recommendation — FlyRank AI"
     }
   },
+  "certificates": {
+    "eyebrow": "CREDENTIALS",
+    "title": "Certificates & credentials",
+    "subtitle": "Courses, training programs and experiences completed throughout my journey.",
+    "cardDescription": "Completed certification focused on technical development and practical application.",
+    "descriptions": {
+      "cs50": "Harvard's introductory computer science course covering computational thinking, algorithms, data structures, C, Python and web development.",
+      "flyrank": "A completed Backend AI Engineering internship program focused on backend engineering skills, technical competency, and professional contribution at FlyRank.",
+      "efset": "Official English proficiency certificate confirming CEFR C1 level.",
+      "excel": "Excel course from intermediate to advanced, covering data analysis, functions, pivot tables and automation.",
+      "aws": "Training on AWS fundamentals, covering compute, storage, networking and core platform services.",
+      "flyrankRecommendation": "Letter of recommendation issued by FlyRank AI recognizing the work during the internship."
+    },
+    "verification": "Verification ID",
+    "view": "View certificate",
+    "close": "Close",
+    "openOriginal": "Open original",
+    "verified": "Verified"
+  },
   "contact": {
     "subtitle": "I'm available for projects, consulting and technical collaborations.",
     "location": "Jardim do Vale, Itaquaquecetuba/SP",
@@ -211,7 +246,7 @@
     }
   },
   "footer": {
-    "copyright": "© 2026 DevPortfolio. All rights reserved."
+    "copyright": "© 2026 Leandro P. Dos Santos. All rights reserved."
   },
   "blog": {
     "title": "Technical Articles",

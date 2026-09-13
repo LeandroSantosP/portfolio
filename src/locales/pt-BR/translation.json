@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "DevPortfolio | Engenheiro de Software",
+    "title": "Leandro P. Dos Santos | Engenheiro de Software",
     "description": "Portfólio de Leandro Pereira dos Santos — Estudante de Engenharia de Software, foco em Java, Spring Boot, Node.js, APIs REST, dados e IA."
   },
   "common": {
@@ -17,6 +17,7 @@
     "projects": "Projetos",
     "skills": "Habilidades",
     "academic": "Formação Acadêmica",
+    "certificates": "Certificados",
     "contact": "Contato",
     "language": "Selecionar idioma",
     "themeLight": "Ativar modo claro",
@@ -37,7 +38,22 @@
       "Sou um profissional em formação em Engenharia de Software, com experiência prática em desenvolvimento de APIs REST, automação, banco de dados e projetos de inteligência artificial. Autodidata, organizado e com forte interesse em aplicar IA e dados para resolver problemas técnicos.",
       "Automatizei tarefas com Claude Code, Codex, Gemini e OpenCode. Meu foco está em código limpo, arquitetura em camadas e APIs bem contratadas que evoluem com o negócio amanhã."
     ],
-    "imgAlt": "Engenheiro de Software"
+    "imgAlt": "Engenheiro de Software",
+    "scroll": "Rolar para continuar"
+  },
+  "stats": {
+    "ariaLabel": "Resumo profissional",
+    "items": {
+      "education": { "value": "2º", "label": "semestre" },
+      "projects": { "value": "05+", "label": "projetos" },
+      "certificates": { "value": "06", "label": "certificados" },
+      "experience": { "value": "01", "label": "estágio" }
+    }
+  },
+  "projects": {
+    "eyebrow": "TRABALHO SELECIONADO",
+    "title": "PROJETOS RECENTES",
+    "viewCode": "Ver código"
   },
   "hero": {
     "available": "Disponível para novos projetos",
@@ -116,9 +132,9 @@
       },
       "scraper": {
         "period": "08/2026",
-        "title": "The Polite Scraper & LLM Triage API",
-        "subtitle": "<tag3>Projeto de conclusão do FlyRank AI Internship</tag3> — (Node.js + Express) - (hand-coded + <tag3>IA</tag3>)",
-        "body": "Projeto de conclusão do estágio FlyRank AI Internship — Backend AI Engineering Track.",
+        "title": "Plataforma de captura de leads e widget incorporável",
+        "subtitle": "<tag1>Projeto pessoal</tag1> — (Node.js + Express) - (hand-coded + <tag3>IA</tag3>)",
+        "body": "Plataforma SaaS multi-tenant para captura de leads e um widget incorporável.",
         "bullets": [
           "Plataforma SaaS multi-tenant de captura de leads com widgets embeddables (Node.js + PostgreSQL), incorporáveis em qualquer site via tag <script> e com isolamento rígido entre tenants.",
           "Endpoint público de submissão com CORS (preflight), validação Zod na fronteira e erros 4xx limpos — sem nunca retornar 500 por erro de usuário.",
@@ -129,7 +145,7 @@
     }
   },
   "skills": {
-    "title": "HABILIDADES / SKILLS",
+    "title": "TECNOLOGIAS QUE UTILIZO",
     "subtitle": "Visão geral das minhas competências técnicas, metodologias e idiomas.",
     "categories": {
       "technical": {
@@ -186,6 +202,25 @@
       "flyrankRecommendation": "Carta de Recomendação — FlyRank AI"
     }
   },
+  "certificates": {
+    "eyebrow": "CREDENCIAIS",
+    "title": "Certificados e credenciais",
+    "subtitle": "Cursos, formações e experiências que completei ao longo da minha trajetória.",
+    "cardDescription": "Certificação concluída com foco em desenvolvimento técnico e aplicação prática.",
+    "descriptions": {
+      "cs50": "Curso introdutório de ciência da computação de Harvard, cobrindo pensamento computacional, algoritmos, AI, estruturas de dados, C, Python e desenvolvimento web.",
+      "flyrank": "Programa de estágio concluído em Backend AI Engineering, focado em habilidades de engenharia backend, competência técnica e contribuição profissional na FlyRank.",
+      "efset": "Certificação oficial de proficiência em inglês com nível confirmado CEFR C1.",
+      "excel": "Curso de Excel do intermediário ao avançado, cobrindo análise de dados, funções, tabelas dinâmicas e automação.",
+      "aws": "Formação em fundamentos da AWS, cobrindo computação, armazenamento, redes e os principais serviços da plataforma.",
+      "flyrankRecommendation": "Carta de recomendação emitida pela FlyRank AI reconhecendo a atuação durante o estágio."
+    },
+    "verification": "ID de verificação",
+    "view": "Ver certificado",
+    "close": "Fechar",
+    "openOriginal": "Abrir original",
+    "verified": "Verificado"
+  },
   "contact": {
     "subtitle": "Estou disponível para projetos, consultoria e colaborações técnicas.",
     "location": "Jardim do Vale, Itaquaquecetuba/SP",
@@ -211,7 +246,7 @@
     }
   },
   "footer": {
-    "copyright": "© 2026 DevPortfolio. Todos os direitos reservados."
+    "copyright": "© 2026 Leandro P. Dos Santos. Todos os direitos reservados."
   },
   "blog": {
     "title": "Artigos Técnicos",

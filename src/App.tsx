@@ -1,19 +1,63 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import TopNav from './components/TopNav'
 import HeroAbout from './components/HeroAbout'
-import About from './components/About'
-import Blog from './components/Blog'
 import Experience from './components/Experience'
+import StatsStrip from './components/StatsStrip'
+import Projects from './components/Projects'
 import Timeline from './components/Timeline'
 import Skills from './components/Skills'
-import Trajectory from './components/Trajectory'
+import AcademicCard from './components/AcademicCard'
+import Certificates from './components/Certificates'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import { scrollToId } from './utils/scroll'
 import ParticlesBackground from './components/ParticlesBackground'
+import { getCurrentRoute } from './router'
+
+function RouteContent({ route }: { route: ReturnType<typeof getCurrentRoute> }): JSX.Element {
+  if (route === '/experience') {
+    return (
+      <div className="max-w-container-max mx-auto px-gutter route-page">
+        <Experience />
+        <Timeline />
+      </div>
+    )
+  }
+
+  if (route === '/certificados') {
+    return <Certificates />
+  }
+
+  if (route === '/contato') {
+    return (
+      <div className="max-w-container-max mx-auto px-gutter route-page">
+        <Contact />
+      </div>
+    )
+  }
+
+  return (
+    <>
+      <div className="max-w-container-max mx-auto px-gutter">
+        <HeroAbout />
+        <StatsStrip />
+        <AcademicCard />
+        <Projects />
+        <Skills />
+      </div>
+    </>
+  )
+}
 
 export default function App(): JSX.Element {
   const mainRef = useRef<HTMLElement | null>(null)
+  const [route, setRoute] = useState(() => getCurrentRoute())
+
+  useEffect(() => {
+    const handlePopState = () => setRoute(getCurrentRoute())
+    window.addEventListener('popstate', handlePopState)
+    return () => window.removeEventListener('popstate', handlePopState)
+  }, [])
 
   useEffect(() => {
     const main = mainRef.current
@@ -86,16 +130,7 @@ export default function App(): JSX.Element {
       <ParticlesBackground />
       <TopNav />
       <main ref={el => (mainRef.current = el)}>
-        <div className="max-w-container-max mx-auto px-gutter">
-          <HeroAbout />
-          <Experience />
-          <Timeline />
-          <Skills />
-        </div>
-        <Trajectory />
-        <div className="max-w-container-max mx-auto px-gutter">
-          <Contact />
-        </div>
+        <RouteContent route={route} />
       </main>
       <Footer />
     </div>

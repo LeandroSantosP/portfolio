@@ -75,10 +75,10 @@ export default function Skills(): JSX.Element {
   return (
     <section className="skills-panel transition-[transform,opacity] duration-700 opacity-100" id="skills">
       <div className="skills-heading">
-        <h2 className="skills-title">
-          <Sparkles aria-hidden="true" size={20} strokeWidth={2.5} />
-          {t('skills.title')}
-        </h2>
+        <div className="academic-card-heading">
+          <h2 className="font-headline-lg text-headline-lg text-primary">{t('skills.title')}</h2>
+          <span className="section-index">04 / 06</span>
+        </div>
         <p className="text-secondary font-body-md text-body-md max-w-xl">{t('skills.subtitle')}</p>
       </div>
 

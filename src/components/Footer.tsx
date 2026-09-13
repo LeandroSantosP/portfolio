@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <footer className="bg-surface border-t border-outline-variant/30 mt-xl">
       <div className="w-full py-xl px-gutter max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
-        <div className="font-headline-md text-headline-md font-bold text-primary dark:text-on-primary-fixed">DevPortfolio</div>
+        <div className="font-headline-md text-headline-md font-bold text-primary dark:text-on-primary-fixed">Leandro P. Dos Santos</div>
 
         <div className="flex items-center gap-6">
           <nav className="flex gap-3">

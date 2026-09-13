@@ -8,11 +8,8 @@ type TimelineEvent = {
 }
 
 const events: TimelineEvent[] = [
-  { key: 'controlApi', github: 'https://github.com/LeandroSantosP/control-api', icon: 'account_balance_wallet' },
-  { key: 'sellEcom', github: 'https://github.com/LeandroSantosP/sell-ecom', icon: 'storefront' },
   { key: 'degree', icon: 'school' },
   { key: 'flyRank', icon: 'work' },
-  { key: 'scraper', github: 'https://github.com/LeandroSantosP/The-polite-scraper', icon: 'bot' },
 ]
 
 const transComponents = {

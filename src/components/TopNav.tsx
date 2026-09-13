@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { scrollToId } from '../utils/scroll'
+import { navigateTo } from '../router'
 import { setLanguage, SUPPORTED_LANGUAGES } from '../i18n'
 import { Code, Sun, Moon, Menu, X } from 'lucide-react'
 
@@ -41,30 +42,36 @@ export default function TopNav() {
   }, [menuOpen])
 
   const navItems = [
-    { id: '#home', label: t('nav.about') },
-    { id: '#experience', label: t('nav.experience') },
-    { id: '#timeline', label: t('nav.projects') },
-    { id: '#skills', label: t('nav.skills') },
-    { id: '#trajectory', label: t('nav.academic') },
+    { href: '/', label: t('nav.about') },
+    { href: '/experience', label: t('nav.experience') },
+    { href: '/#projects', label: t('nav.projects') },
+    { href: '/certificados', label: t('nav.certificates') },
   ]
 
-  const goTo = (id: string) => (e: React.MouseEvent) => {
+  const goTo = (path: string) => (e: React.MouseEvent) => {
     e.preventDefault()
     setMenuOpen(false)
-    scrollToId(id)
+    navigateTo(path)
+
+    const hashIndex = path.indexOf('#')
+    if (hashIndex >= 0) {
+      window.setTimeout(() => scrollToId(path.slice(hashIndex)), 0)
+    } else {
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+    }
   }
 
   return (
     <nav className="bg-surface/80 backdrop-blur-md dark:bg-surface-container/80 dock-full-width top-0 sticky z-50 border-b border-outline-variant/20">
       <div className="flex justify-between items-center w-full px-gutter py-4 max-w-container-max mx-auto">
-        <div className="font-headline-md text-headline-md font-semibold tracking-tight text-primary dark:text-on-primary-fixed flex items-center gap-2" aria-label="DevPortfolio">
+        <div className="font-headline-md text-headline-md font-semibold tracking-tight text-primary dark:text-on-primary-fixed flex items-center gap-2" aria-label="Leandro P. Dos Santos">
           <Code className="w-6 h-6" aria-hidden="true" />
-          <span className="sr-only">DevPortfolio</span>
+          <span className="sr-only">Leandro P. Dos Santos</span>
         </div>
 
         <div className="hidden md:flex items-center gap-xl">
           {navItems.map((item) => (
-            <a key={item.id} className="text-secondary dark:text-secondary-fixed-dim hover:text-primary transition-colors font-label-md text-label-md" href={item.id} onClick={goTo(item.id)}>{item.label}</a>
+            <a key={item.href} className="text-secondary dark:text-secondary-fixed-dim hover:text-primary transition-colors font-label-md text-label-md" href={item.href} onClick={goTo(item.href)}>{item.label}</a>
           ))}
         </div>
 
@@ -101,7 +108,8 @@ export default function TopNav() {
           </button>
 
           <a
-            href="#contact"
+            href="/contato"
+            onClick={goTo('/contato')}
             className="hidden sm:inline-flex topnav-contact px-6 py-2 rounded-lg font-label-md text-label-md bg-primary text-on-primary hover:opacity-70 transition-opacity duration-300 active:scale-95 transition-transform duration-200 dark:bg-primary dark:text-on-primary"
           >
             {t('nav.contact')}
@@ -123,13 +131,13 @@ export default function TopNav() {
       {menuOpen && (
         <div id="mobile-nav-menu" className="md:hidden border-t border-outline-variant/20 bg-surface/95 dark:bg-surface-container/95 backdrop-blur-md px-gutter py-4 flex flex-col gap-2">
           {navItems.map((item) => (
-            <a key={item.id} href={item.id} onClick={goTo(item.id)} className="px-3 py-3 rounded-lg text-secondary dark:text-secondary-fixed-dim hover:bg-primary/10 hover:text-primary transition-colors font-label-md text-label-md">
+            <a key={item.href} href={item.href} onClick={goTo(item.href)} className="px-3 py-3 rounded-lg text-secondary dark:text-secondary-fixed-dim hover:bg-primary/10 hover:text-primary transition-colors font-label-md text-label-md">
               {item.label}
             </a>
           ))}
           <a
-            href="#contact"
-            onClick={goTo('#contact')}
+            href="/contato"
+            onClick={goTo('/contato')}
             className="sm:hidden px-3 py-3 rounded-lg text-secondary dark:text-secondary-fixed-dim hover:bg-primary/10 hover:text-primary transition-colors font-label-md text-label-md"
           >
             {t('nav.contact')}

@@ -1,13 +1,14 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
 import { scrollToId } from '../utils/scroll'
+import { navigateTo } from '../router'
 
 export default function HeroAbout() {
   const { t } = useTranslation()
   const paragraphs = t('heroAbout.paragraphs', { returnObjects: true }) as string[]
 
   return (
-    <section id="home" className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start py-8">
+    <section id="home" className="hero-section grid grid-cols-1 md:grid-cols-12 gap-8 items-start py-8">
       <div className="md:col-span-7 flex flex-col justify-start gap-6">
         <div className="inline-flex items-center gap-2 bg-surface-container-high px-3 py-1 rounded-lg">
           <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
@@ -27,14 +28,14 @@ export default function HeroAbout() {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 sm:items-center items-stretch">
-          <a href="#timeline" className="bg-primary text-on-primary px-6 py-3 rounded-lg font-label-md text-label-md hover:opacity-90 transition-all flex items-center justify-center gap-2" onClick={(e) => { e.preventDefault(); scrollToId('#timeline'); }}>
+          <a href="#projects" className="bg-primary text-on-primary px-6 py-3 rounded-lg font-label-md text-label-md hover:opacity-90 transition-all flex items-center justify-center gap-2" onClick={(e) => { e.preventDefault(); scrollToId('#projects'); }}>
             {t('heroAbout.ctaProjects')}
             <span className="material-symbols-outlined text-[18px]">arrow_downward</span>
           </a>
 
           <a href="#home" className="border border-outline-variant text-primary px-6 py-3 rounded-lg font-label-md text-label-md hover:bg-[color-mix(in_srgb,var(--text)_10%,transparent)] transition-all flex items-center justify-center" onClick={(e) => { e.preventDefault(); scrollToId('#home'); }}>{t('heroAbout.ctaAbout')}</a>
 
-          <a href="#contact" className="border border-outline-variant text-primary px-6 py-3 rounded-lg font-label-md text-label-md hover:bg-[color-mix(in_srgb,var(--text)_10%,transparent)] transition-all flex items-center justify-center" onClick={(e) => { e.preventDefault(); scrollToId('#contact'); }}>{t('heroAbout.ctaContact')}</a>
+          <a href="/contato" className="border border-outline-variant text-primary px-6 py-3 rounded-lg font-label-md text-label-md hover:bg-[color-mix(in_srgb,var(--text)_10%,transparent)] transition-all flex items-center justify-center" onClick={(e) => { e.preventDefault(); navigateTo('/contato'); }}>{t('heroAbout.ctaContact')}</a>
 
           {/* Social icons + Download CV — shown on md+ */}
           <div className="hidden md:flex items-center gap-3">
@@ -74,11 +75,28 @@ export default function HeroAbout() {
         </div>
       </div>
 
-      <div className="md:col-span-5 flex items-start justify-center">
-        <div className="w-full max-w-md aspect-square rounded-lg overflow-hidden bg-surface-container shadow-sm border border-outline-variant/30">
-          <img src="/perfil-photo.jpg" alt={t('heroAbout.imgAlt')} className="w-full h-full object-cover" />
+      <div className="hero-profile-wrap md:col-span-5 flex items-start justify-center">
+        <div className="hero-profile-frame">
+          <div className="hero-profile-glow" aria-hidden="true" />
+          <div className="hero-profile-photo">
+            <img src="/perfil-photo.jpg" alt={t('heroAbout.imgAlt')} />
+          </div>
+          <div className="hero-profile-stat">
+            <span>{t('trajectory.degreeTag')}</span>
+            <strong>{t('trajectory.gpa')}</strong>
+          </div>
         </div>
       </div>
+
+      <a
+        className="hero-scroll-cue"
+        href="#projects"
+        onClick={(e) => { e.preventDefault(); scrollToId('#projects'); }}
+        aria-label={t('heroAbout.scroll')}
+      >
+        <span>{t('heroAbout.scroll')}</span>
+        <span className="hero-scroll-arrow" aria-hidden="true">↓</span>
+      </a>
     </section>
   )
 }
