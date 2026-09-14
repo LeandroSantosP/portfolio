@@ -40,7 +40,7 @@ body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neu
 .skills-category-heading h3 { margin: 0; color: var(--text); font-family: 'Space Mono', monospace; font-size: 0.82rem; font-weight: 700; }
 .skills-category-icon { display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; border-radius: 9px; color: var(--category-accent); background: color-mix(in srgb, var(--category-accent) 12%, transparent); }
 .skills-items { display: flex; flex-wrap: wrap; gap: 10px; margin: 0; padding: 0; list-style: none; }
-.skill-chip { display: inline-flex; align-items: center; gap: 8px; min-height: 40px; padding: 8px 13px; border: 1px solid color-mix(in srgb, var(--outline) 52%, transparent); border-radius: 10px; color: var(--text); background: color-mix(in srgb, var(--surface) 70%, transparent); font-family: 'Karla', sans-serif; font-size: 1rem; font-weight: 600; transition: border-color 180ms ease, transform 180ms ease, background 180ms ease; }
+.skill-chip { display: inline-flex; align-items: center; gap: 8px; min-height: 40px; padding: 8px 13px; border: 1px solid color-mix(in srgb, var(--outline) 52%, transparent); border-radius: 10px; color: var(--text); background: color-mix(in srgb, var(--surface) 70%, transparent); font-family: 'Karla', sans-serif; font-size: 1rem; font-weight: 600; transition: border-color 180ms ease, transform 180ms ease, background 180ms ease; text-decoration: none; cursor: pointer; }
 .skill-chip svg { color: var(--category-accent); flex: 0 0 auto; }
 .skill-chip:hover { border-color: var(--category-accent); background: color-mix(in srgb, var(--category-accent) 9%, var(--surface)); transform: translateY(-2px); }
 .skills-languages { display: grid; gap: 12px; }

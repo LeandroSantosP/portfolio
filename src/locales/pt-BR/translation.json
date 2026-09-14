@@ -29,8 +29,8 @@
     "available": "Disponível para trabalho remoto ou presencial",
     "titleStart": "Estudante de Engenharia de Software &",
     "titleHighlight": "Software, Dados & IA",
-    "tagline": "Buscando atuar como Estagiário TI ou Desenvolvedor Júnior, com foco em Java, Spring Boot, Node.js e APIs REST.",
-    "intro": "Com conhecimentos em AWS, Docker, CI/CD, React.js e metodologias ágeis, aplicando IA e dados para resolver problemas técnicos e melhorar processos.",
+    "tagline": "Em busca de uma primeira oportunidade na área de Tecnologia (Estágio/Júnior) para aplicar meus conhecimentos e agregar valor ao negócio.",
+    "intro": "Com conhecimentos em Python, Docker, Java, React.js e metodologias ágeis, aplicando IA e dados para resolver problemas técnicos e melhorar processos.",
     "ctaProjects": "Projetos",
     "ctaAbout": "Sobre",
     "ctaContact": "Contato",
@@ -150,7 +150,7 @@
     "categories": {
       "technical": {
         "title": "Desenvolvimento",
-        "items": ["Java", "Spring Boot", "Node.js", "React.js", "APIs REST", "JavaScript"]
+        "items": ["Java", "Spring Boot", "Node.js", "React.js", "Python", "APIs REST", "JavaScript"]
       },
       "cloud": {
         "title": "Cloud & Infraestrutura",

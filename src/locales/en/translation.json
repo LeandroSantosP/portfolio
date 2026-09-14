@@ -29,8 +29,8 @@
     "available": "Available for remote or on-site work",
     "titleStart": "Software Engineering Student &",
     "titleHighlight": "Software, Data & AI",
-    "tagline": "Seeking an IT Intern or Junior Developer role, focused on Java, Spring Boot, Node.js and REST APIs.",
-    "intro": "With knowledge in AWS, Docker, CI/CD, React.js and agile methodologies, applying AI and data to solve technical problems and improve processes.",
+    "tagline": "Seeking a first opportunity in Technology (Internship/Junior) to apply my knowledge and add value to the business.",
+    "intro": "With knowledge in Python, Docker, Java, React.js and agile methodologies, applying AI and data to solve technical problems and improve processes.",
     "ctaProjects": "Projects",
     "ctaAbout": "About",
     "ctaContact": "Contact",
@@ -150,7 +150,7 @@
     "categories": {
       "technical": {
         "title": "Development",
-        "items": ["Java", "Spring Boot", "Node.js", "React.js", "REST APIs", "JavaScript"]
+        "items": ["Java", "Spring Boot", "Node.js", "React.js", "Python", "REST APIs", "JavaScript"]
       },
       "cloud": {
         "title": "Cloud & Infrastructure",
