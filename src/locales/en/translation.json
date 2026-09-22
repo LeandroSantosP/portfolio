@@ -17,6 +17,7 @@
     "projects": "Projects",
     "skills": "Skills",
     "academic": "Education",
+    "education": "Education",
     "certificates": "Certificates",
     "contact": "Contact",
     "language": "Select language",
@@ -54,6 +55,12 @@
     "eyebrow": "SELECTED WORK",
     "title": "Recent projects",
     "viewCode": "View code"
+  },
+  "projectsPage": {
+    "eyebrow": "PORTFOLIO",
+    "title": "PROJECTS",
+    "subtitle": "Personal and internship projects, with architecture, tests and applied AI in each one.",
+    "highlights": "Highlights"
   },
   "hero": {
     "available": "Available for new projects",
@@ -111,6 +118,19 @@
           "Implemented authentication and authorization with Spring Security + OAuth2, protecting 10 endpoints with access control based on 2 roles (admin/user).",
           "Modeled entities and persistence with Spring Data JDBC + MySQL, using Flyway for database versioning and migrations.",
           "Wrote 21 automated tests (unit and integration) with JUnit, Mockito and Testcontainers."
+        ]
+      },
+      "emailClassifier": {
+        "period": "09/2026",
+        "title": "Email Classifier",
+        "subtitle": "<tag1>Personal project</tag1> — AI email classifier — (React + Fastify/TS) - (hand-coded + <tag3>AI</tag3>)",
+        "body": "A full-stack app that uses AI to decide what to do with every email in your inbox: reply, ignore (spam), review or maybe — with an importance level and confidence %.",
+        "bullets": [
+          "Typed System One AI judge (verdict + importance + confidence) with an automatic heuristic fallback when there is no AI key.",
+          "Interchangeable classifier architecture (Jev ⇄ mock) without touching the UI.",
+          "Gmail OAuth (read-only) with inbox and spam pagination, falling back to mock data.",
+          "React/Vite SPA with dark mode and PT-BR/EN i18n (pt-BR is the default), filterable table by verdict/importance and cached results.",
+          "npm workspaces monorepo: apps/api (Fastify/TS) · apps/web (React) · packages/shared (contracts)."
         ]
       },
       "degree": {

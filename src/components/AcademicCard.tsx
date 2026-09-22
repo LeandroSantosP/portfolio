@@ -6,7 +6,7 @@ export default function AcademicCard(): JSX.Element {
   const { t } = useTranslation()
 
   return (
-    <section className="academic-card-section" id="academic">
+    <section className="academic-card-section" id="education">
       <div className="academic-card-heading">
         <h2 className="font-headline-lg text-headline-lg text-primary">{t('trajectory.title')}</h2>
         <a className="academic-card-link" href="/certificados">

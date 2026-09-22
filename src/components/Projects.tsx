@@ -3,11 +3,12 @@ import { useTranslation, Trans } from 'react-i18next'
 import { ArrowUpRight, Github } from 'lucide-react'
 
 type Project = {
-  key: 'controlApi' | 'sellEcom' | 'scraper'
+  key: 'controlApi' | 'sellEcom' | 'scraper' | 'emailClassifier'
   github: string
 }
 
 const projects: Project[] = [
+  { key: 'emailClassifier', github: 'https://github.com/LeandroSantosP/email-classifier' },
   { key: 'scraper', github: 'https://github.com/LeandroSantosP/Embeddable-widget-and-lead-capture-platform' },
   { key: 'controlApi', github: 'https://github.com/LeandroSantosP/control-api' },
   { key: 'sellEcom', github: 'https://github.com/LeandroSantosP/sell-ecom' },

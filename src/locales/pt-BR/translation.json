@@ -17,6 +17,7 @@
     "projects": "Projetos",
     "skills": "Habilidades",
     "academic": "Formação Acadêmica",
+    "education": "Educação",
     "certificates": "Certificados",
     "contact": "Contato",
     "language": "Selecionar idioma",
@@ -54,6 +55,12 @@
     "eyebrow": "TRABALHO SELECIONADO",
     "title": "PROJETOS RECENTES",
     "viewCode": "Ver código"
+  },
+  "projectsPage": {
+    "eyebrow": "PORTFÓLIO",
+    "title": "PROJETOS",
+    "subtitle": "Projetos pessoais e de estágio, com arquitetura, testes e IA aplicada em cada um.",
+    "highlights": "Destaques"
   },
   "hero": {
     "available": "Disponível para novos projetos",
@@ -111,6 +118,19 @@
           "Implementei autenticação e autorização com Spring Security + OAuth2, protegendo 10 endpoints com controle de acesso baseado em 2 roles (admin/user).",
           "Modelei entidades e persistência com Spring Data JDBC + MySQL, usando Flyway para versionamento e migrations do banco de dados.",
           "Criei 21 testes automatizados (unitários e integração) com JUnit, Mockito e Testcontainers."
+        ]
+      },
+      "emailClassifier": {
+        "period": "09/2026",
+        "title": "Email Classifier",
+        "subtitle": "<tag1>Projeto pessoal</tag1> — Classificador de e-mails com IA — (React + Fastify/TS) - (hand-coded + <tag3>IA</tag3>)",
+        "body": "Aplicação full-stack que decide, com IA, o que fazer com cada e-mail da caixa de entrada: responder, ignorar (spam), revisar ou talvez — com nível de importância e confiança em %.",
+        "bullets": [
+          "Juiz de IA System One tipado (veredito + importância + confiança) com fallback heurístico automático quando não há chave de IA.",
+          "Arquitetura de classificadores intercambiáveis (Jev ⇄ mock) sem tocar na UI.",
+          "Gmail OAuth (somente leitura) com paginação da caixa de entrada e spam, com fallback para dados mock.",
+          "SPA React/Vite com modo escuro e i18n PT-BR/EN (pt-BR é o padrão), tabela com filtros por veredito/importância e cache de resultados.",
+          "Monorepo npm workspaces: apps/api (Fastify/TS) · apps/web (React) · packages/shared (contratos)."
         ]
       },
       "degree": {

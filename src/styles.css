@@ -200,6 +200,12 @@ body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neu
 .eyebrow { color: var(--primary); margin-bottom: 10px; }
 .section-index { white-space: nowrap; }
 .projects-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.projects-page-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+.projects-page-grid .project-card { padding: 28px; }
+.projects-page-grid .project-preview { width: calc(100% + 56px); margin: -28px -28px 26px; }
+.projects-page-grid .project-card h3 { font-size: 1.6rem; }
+.projects-page-grid .project-body { font-size: 1.05rem; line-height: 1.6; }
+.projects-page-grid .project-highlights-list li { font-size: 0.97rem; line-height: 1.55; }
 .project-card {
 	display: flex;
 	min-width: 0;
@@ -218,6 +224,32 @@ body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neu
 .project-subtitle { min-height: 42px; margin: 0 0 16px; color: var(--secondary); font-family: 'Space Mono', monospace; font-size: 0.7rem; line-height: 1.5; }
 .project-body { flex: 1; margin: 0 0 24px; color: var(--secondary); font-family: 'Karla', sans-serif; font-size: 1rem; line-height: 1.55; }
 .project-link { display: inline-flex; align-items: center; gap: 8px; width: fit-content; color: var(--text); font-family: 'Space Mono', monospace; font-size: 0.72rem; font-weight: 700; text-transform: uppercase; }
+.project-highlights { display: flex; flex-direction: column; flex: 1; gap: 10px; margin: 0 0 24px; }
+.project-highlights-label { color: var(--primary); font-family: 'Space Mono', monospace; font-size: 0.62rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; }
+.project-highlights-list { display: flex; flex-direction: column; gap: 8px; margin: 0; padding: 0; list-style: none; }
+.project-highlights-list li { display: flex; align-items: flex-start; gap: 8px; color: var(--secondary); font-family: 'Karla', sans-serif; font-size: 0.92rem; line-height: 1.45; }
+.project-highlights-list svg { flex: 0 0 auto; margin-top: 2px; color: var(--primary); }
+.project-preview {
+	display: block;
+	position: relative;
+	width: calc(100% + 48px);
+	aspect-ratio: 16 / 9;
+	margin: -24px -24px 22px;
+	overflow: hidden;
+	background: color-mix(in srgb, var(--band) 92%, var(--primary));
+	border-bottom: 1px solid color-mix(in srgb, var(--outline) 40%, transparent);
+}
+.project-preview img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+	filter: saturate(0.92);
+	transition: transform 300ms ease, filter 300ms ease;
+}
+.project-card:hover .project-preview img { transform: scale(1.05); filter: saturate(1.05); }
+.project-card .project-preview + .project-card-topline { margin-bottom: 22px; }
 .projects-section { padding-top: 24px; }
 
 .certificates-page { min-height: calc(100vh - 76px); padding: 88px 24px 112px; }
@@ -303,6 +335,7 @@ body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neu
 
 @media (max-width: 860px) {
 	.projects-grid { grid-template-columns: 1fr; }
+	.projects-page-grid { grid-template-columns: 1fr; }
 	.project-card { min-height: 0; }
 	.certificates-grid { grid-template-columns: 1fr; }
 }

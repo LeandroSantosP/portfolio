@@ -44,7 +44,8 @@ export default function TopNav() {
   const navItems = [
     { href: '/', label: t('nav.about') },
     { href: '/experience', label: t('nav.experience') },
-    { href: '/#projects', label: t('nav.projects') },
+    { href: '/projetos', label: t('nav.projects') },
+    { href: '/#education', label: t('nav.education') },
     { href: '/certificados', label: t('nav.certificates') },
   ]
 

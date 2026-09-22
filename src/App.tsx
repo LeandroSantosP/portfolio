@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import TopNav from './components/TopNav'
 import HeroAbout from './components/HeroAbout'
 import Experience from './components/Experience'
+import ProjectsPage from './components/ProjectsPage'
 import StatsStrip from './components/StatsStrip'
 import Projects from './components/Projects'
 import Timeline from './components/Timeline'
@@ -26,6 +27,10 @@ function RouteContent({ route }: { route: ReturnType<typeof getCurrentRoute> }):
 
   if (route === '/certificados') {
     return <Certificates />
+  }
+
+  if (route === '/projetos') {
+    return <ProjectsPage />
   }
 
   if (route === '/contato') {
