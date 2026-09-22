@@ -174,7 +174,7 @@
       },
       "cloud": {
         "title": "Cloud & Infraestrutura",
-        "items": ["AWS (VPC, EC2, S3)", "CI/CD", "Docker", "Linux"]
+        "items": ["AWS (VPC, EC2, S3)", "CI/CD (GitHub Actions)", "Docker", "Linux"]
       },
       "db": {
         "title": "Banco de Dados & BI",
@@ -186,7 +186,7 @@
       },
       "ai": {
         "title": "IA & Automação",
-        "items": ["Prompt Engineering", "ChatGPT", "Claude Code", "Codex", "Gemini", "OpenCode"]
+        "items": ["Prompt Engineering", "RAG", "AI Agents", "Tool Calling", "JEV (TypeSafe AI)", "ChatGPT", "Claude Code", "Codex", "Gemini", "OpenCode"]
       },
       "soft": {
         "title": "Qualidades Pessoais",
