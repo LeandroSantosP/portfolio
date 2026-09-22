@@ -8,7 +8,7 @@ export default function HeroAbout() {
   const paragraphs = t('heroAbout.paragraphs', { returnObjects: true }) as string[]
 
   return (
-    <section id="home" className="hero-section grid grid-cols-1 md:grid-cols-12 gap-8 items-start py-8">
+    <section id="home" className="hero-section grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 items-start py-8">
       <div className="md:col-span-7 flex flex-col justify-start gap-6">
         <div className="inline-flex items-center gap-2 bg-surface-container-high px-3 py-1 rounded-lg">
           <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
@@ -28,12 +28,12 @@ export default function HeroAbout() {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 sm:items-center items-stretch">
-          <a href="#projects" className="bg-primary text-on-primary px-6 py-3 rounded-lg font-label-md text-label-md hover:opacity-90 transition-all flex items-center justify-center gap-2" onClick={(e) => { e.preventDefault(); scrollToId('#projects'); }}>
+          <a href="/projetos" className="bg-primary text-on-primary px-6 py-3 rounded-lg font-label-md text-label-md hover:opacity-90 transition-all flex items-center justify-center gap-2" onClick={(e) => { e.preventDefault(); navigateTo('/projetos'); }}>
             {t('heroAbout.ctaProjects')}
-            <span className="material-symbols-outlined text-[18px]">arrow_downward</span>
+            <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
           </a>
 
-          <a href="#home" className="border border-outline-variant text-primary px-6 py-3 rounded-lg font-label-md text-label-md hover:bg-[color-mix(in_srgb,var(--text)_10%,transparent)] transition-all flex items-center justify-center" onClick={(e) => { e.preventDefault(); scrollToId('#home'); }}>{t('heroAbout.ctaAbout')}</a>
+          <a href="#skills" className="border border-outline-variant text-primary px-6 py-3 rounded-lg font-label-md text-label-md hover:bg-[color-mix(in_srgb,var(--text)_10%,transparent)] transition-all flex items-center justify-center" onClick={(e) => { e.preventDefault(); scrollToId('#skills'); }}>{t('heroAbout.ctaAbout')}</a>
 
           <a href="/contato" className="border border-outline-variant text-primary px-6 py-3 rounded-lg font-label-md text-label-md hover:bg-[color-mix(in_srgb,var(--text)_10%,transparent)] transition-all flex items-center justify-center" onClick={(e) => { e.preventDefault(); navigateTo('/contato'); }}>{t('heroAbout.ctaContact')}</a>
 
