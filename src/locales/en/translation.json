@@ -186,7 +186,7 @@
       },
       "ai": {
         "title": "AI & Automation",
-        "items": ["Prompt Engineering", "RAG", "AI Agents", "Tool Calling", "JEV (TypeSafe AI)", "ChatGPT", "Claude Code", "Codex", "Gemini", "OpenCode"]
+        "items": ["Prompt Engineering", "RAG", "AI Agents", "Tool Calling", "JEV (TypeSafe AI)", "ChatGPT", "Claude Code", "Codex", "OpenCode"]
       },
       "soft": {
         "title": "Personal Qualities",

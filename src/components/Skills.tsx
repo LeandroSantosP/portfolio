@@ -117,7 +117,8 @@ const techUrls: Record<string, string> = {
   Git: 'https://git-scm.com',
   JWT: 'https://jwt.io',
   ChatGPT: 'https://openai.com/chatgpt',
-  Gemini: 'https://gemini.google.com',
+  RAG: 'https://aws.amazon.com/pt/what-is/retrieval-augmented-generation/',
+  'JEV (TypeSafe AI)': 'https://typesafe.ai/blog/introducing-system-one-models-and-jev',
 }
 
 export default function Skills(): JSX.Element {
